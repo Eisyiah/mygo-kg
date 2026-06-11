@@ -1,0 +1,39 @@
+---
+import EntityLayout from '../../layouts/EntityLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const radioEpisodes = await getCollection('radio');
+  return radioEpisodes.map((r) => ({
+    params: { id: r.id },
+    props: { radio: r },
+  }));
+}
+
+const { radio } = Astro.props;
+const { Content } = await radio.render();
+---
+<EntityLayout
+  title={`Radio #${radio.data.episodeNumber}: ${radio.data.title}`}
+  entityId={radio.id}
+  entityType="radio"
+>
+  <h1>Radio #{radio.data.episodeNumber}: {radio.data.title}</h1>
+  
+  <div class="entity-meta">
+    <div class="meta-item">
+      <span class="meta-label">Date</span>
+      <span class="meta-value">{radio.data.date}</span>
+    </div>
+    {radio.data.participants?.length > 0 && (
+      <div class="meta-item">
+        <span class="meta-label">Participants</span>
+        <span class="meta-value">{radio.data.participants.join(', ')}</span>
+      </div>
+    )}
+  </div>
+
+  <div class="entity-description">
+    <Content />
+  </div>
+</EntityLayout>

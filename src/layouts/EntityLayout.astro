@@ -1,0 +1,24 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Backlinks from '../components/backlinks/Backlinks.astro';
+import Recommendations from '../components/recommendations/Recommendations.astro';
+
+export interface Props {
+  title: string;
+  entityId: string;
+  entityType: string;
+  description?: string;
+}
+const { title, entityId, entityType, description } = Astro.props;
+---
+<BaseLayout title={title} description={description}>
+  <article class="entity-page" data-entity-id={entityId} data-entity-type={entityType}>
+    <div class="entity-content">
+      <slot />
+    </div>
+    <aside class="entity-sidebar">
+      <Backlinks targetId={entityId} />
+      <Recommendations nodeId={entityId} limit={5} />
+    </aside>
+  </article>
+</BaseLayout>

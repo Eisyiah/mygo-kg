@@ -1,0 +1,21 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Backlinks from '../components/backlinks/Backlinks.astro';
+
+export interface Props {
+  title: string;
+  docId: string;
+  description?: string;
+}
+const { title, docId, description } = Astro.props;
+---
+<BaseLayout title={title} description={description}>
+  <article class="document-page" data-doc-id={docId}>
+    <div class="document-content">
+      <slot />
+    </div>
+    <aside class="document-sidebar">
+      <Backlinks targetId={docId} />
+    </aside>
+  </article>
+</BaseLayout>

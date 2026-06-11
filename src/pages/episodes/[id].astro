@@ -1,0 +1,36 @@
+---
+import EntityLayout from '../../layouts/EntityLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const episodes = await getCollection('episodes');
+  return episodes.map((ep) => ({
+    params: { id: ep.id },
+    props: { episode: ep },
+  }));
+}
+
+const { episode } = Astro.props;
+const { Content } = await episode.render();
+---
+<EntityLayout
+  title={`EP${episode.data.number}: ${episode.data.title}`}
+  entityId={episode.id}
+  entityType="episode"
+>
+  <h1>EP{episode.data.number}: {episode.data.title}</h1>
+  <p class="series">{episode.data.series}</p>
+  
+  <div class="entity-meta">
+    {episode.data.date && (
+      <div class="meta-item">
+        <span class="meta-label">Air Date</span>
+        <span class="meta-value">{episode.data.date}</span>
+      </div>
+    )}
+  </div>
+
+  <div class="entity-description">
+    <Content />
+  </div>
+</EntityLayout>

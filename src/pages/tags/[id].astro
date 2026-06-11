@@ -1,0 +1,27 @@
+---
+import EntityLayout from '../../layouts/EntityLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const tags = await getCollection('tags');
+  return tags.map((tag) => ({
+    params: { id: tag.id },
+    props: { tag },
+  }));
+}
+
+const { tag } = Astro.props;
+const { Content } = await tag.render();
+---
+<EntityLayout
+  title={tag.data.name}
+  entityId={tag.id}
+  entityType="tag"
+>
+  <h1>Tag: {tag.data.name}</h1>
+  <p class="tag-category">Category: {tag.data.category}</p>
+  
+  <div class="entity-description">
+    <Content />
+  </div>
+</EntityLayout>

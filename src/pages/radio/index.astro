@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const radioEpisodes = await getCollection('radio');
+---
+<BaseLayout title="Radio" description="All radio episodes in the MyGO Knowledge Graph">
+  <section class="list-page">
+    <h1>Radio</h1>
+    <div class="entity-list">
+      {radioEpisodes.map((r) => (
+        <a href={`/radio/${r.id}`} class="entity-card">
+          <h3>#{r.data.episodeNumber}: {r.data.title}</h3>
+          <p class="date">{r.data.date}</p>
+          {r.data.participants && <p class="participants">{r.data.participants.join(', ')}</p>}
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

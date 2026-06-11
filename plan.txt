@@ -1,0 +1,1044 @@
+# MyGO Knowledge Graph Archive
+
+## Vision
+
+Build the most complete public knowledge archive for:
+
+* BanG Dream! It's MyGO!!!!!
+* Ave Mujica
+
+The project is not a traditional wiki.
+
+The project is a knowledge graph archive where every piece of content, paragraph, sentence, character, song, event, and concept becomes a searchable and interconnected node.
+
+Users should be able to:
+
+* Read source materials
+* Search at document, paragraph, and sentence level
+* Browse relationships
+* Explore timelines
+* Discover related content automatically
+* Traverse the entire knowledge network
+
+Deployment target:
+
+* GitHub Pages
+* Static site generation
+* No paid services
+* No backend required
+* Long-term maintainability
+
+---
+
+# Core Design Philosophy
+
+Everything is a node.
+
+Characters are nodes.
+
+Songs are nodes.
+
+Events are nodes.
+
+Documents are nodes.
+
+Paragraphs are nodes.
+
+Sentences are nodes.
+
+Tags are nodes.
+
+The archive should function as a knowledge network rather than a collection of pages.
+
+---
+
+# Technology Stack
+
+Framework:
+Astro
+
+Language:
+TypeScript
+
+Content:
+Markdown
+MDX
+
+Storage:
+Git Repository
+
+Search:
+FlexSearch
+
+Graph Visualization:
+Cytoscape.js
+
+Build:
+Static Site Generation
+
+Hosting:
+GitHub Pages
+
+Automation:
+GitHub Actions
+
+---
+
+# Content Sources
+
+Supported content types:
+
+Anime Episodes
+
+Game Stories
+
+Official Interviews
+
+Official Radio
+
+Official Blog Posts
+
+Official Event Reports
+
+Live Reports
+
+Magazine Interviews
+
+Staff Interviews
+
+Voice Actor Interviews
+
+Official Articles
+
+Official Publications
+
+Future content types should be easy to add.
+
+---
+
+# Content Hierarchy
+
+Document
+→ Section
+→ Paragraph
+→ Sentence
+
+Example:
+
+Radio #12
+
+Section A
+
+Paragraph A1
+
+Sentence 1
+
+Sentence 2
+
+Sentence 3
+
+Paragraph A2
+
+Sentence 4
+
+Sentence 5
+
+Every level is independently addressable.
+
+---
+
+# Unique IDs
+
+Every node receives a stable ID.
+
+Examples:
+
+doc-radio-12
+
+sec-radio-12-01
+
+para-radio-12-01-01
+
+sent-radio-12-01-01-03
+
+char-tomori
+
+song-haruhikage
+
+event-crychic-breakup
+
+tag-foreshadowing
+
+IDs are permanent.
+
+All relationships reference IDs.
+
+---
+
+# Entity Types
+
+## Character
+
+Fields:
+
+id
+
+name
+
+aliases
+
+description
+
+group
+
+---
+
+## Song
+
+Fields:
+
+id
+
+title
+
+album
+
+release_date
+
+lyrics_reference
+
+---
+
+## Episode
+
+Fields:
+
+id
+
+series
+
+number
+
+date
+
+summary
+
+---
+
+## Event
+
+Fields:
+
+id
+
+title
+
+date
+
+description
+
+---
+
+## Radio
+
+Fields:
+
+id
+
+title
+
+episode_number
+
+date
+
+participants
+
+---
+
+## Interview
+
+Fields:
+
+id
+
+title
+
+date
+
+participants
+
+---
+
+## Live
+
+Fields:
+
+id
+
+title
+
+venue
+
+date
+
+participants
+
+---
+
+## Tag
+
+Fields:
+
+id
+
+name
+
+description
+
+category
+
+---
+
+# Document Metadata
+
+Example:
+
+title: MyGO Radio #12
+
+type: radio
+
+date: 2023-08-01
+
+characters:
+
+* tomori
+* anon
+
+songs:
+
+* haruhikage
+
+events:
+
+* crychic-breakup
+
+tags:
+
+* friendship
+* regret
+
+source:
+official
+
+---
+
+Document body
+
+---
+
+# Sentence Metadata
+
+Each sentence can contain:
+
+id
+
+text
+
+characters
+
+songs
+
+events
+
+topics
+
+tags
+
+references
+
+importance
+
+speaker
+
+Example:
+
+id: sent-001
+
+text: I never wanted CRYCHIC to end.
+
+speaker: sakiko
+
+characters:
+
+* sakiko
+
+events:
+
+* crychic-breakup
+
+tags:
+
+* regret
+* conflict
+
+importance:
+high
+
+---
+
+# Annotation System
+
+Manual annotations should be supported.
+
+Examples:
+
+speaker
+
+emotion
+
+topic
+
+character development
+
+foreshadowing
+
+callback
+
+relationship change
+
+story significance
+
+Annotations become graph relationships.
+
+---
+
+# Tag System
+
+Tags are first-class entities.
+
+Examples:
+
+crychic
+
+haruhikage
+
+friendship
+
+conflict
+
+regret
+
+growth
+
+betrayal
+
+reunion
+
+foreshadowing
+
+character-development
+
+band-history
+
+Each tag gets its own page.
+
+Example:
+
+/tags/regret
+
+Displays:
+
+related sentences
+
+related paragraphs
+
+related documents
+
+related events
+
+graph view
+
+---
+
+# Automatic Entity Linking
+
+Detect entities automatically.
+
+Example:
+
+Tomori
+
+↓
+
+character page
+
+CRYCHIC
+
+↓
+
+event page
+
+Haruhikage
+
+↓
+
+song page
+
+Entity mentions become graph edges.
+
+---
+
+# Relationship Engine
+
+Relationships should be generated automatically.
+
+Scoring:
+
+Shared character:
++3
+
+Shared song:
++4
+
+Shared event:
++5
+
+Shared tag:
++1
+
+Same month:
++1
+
+Same content type:
++1
+
+Same speaker:
++2
+
+Generate:
+
+related_documents.json
+
+related_paragraphs.json
+
+related_sentences.json
+
+during build.
+
+---
+
+# Backlink System
+
+Every node shows backlinks.
+
+Example:
+
+Sentence A
+
+Referenced by:
+
+Paragraph X
+
+Interview Y
+
+Radio Z
+
+Character Page
+
+Tag Page
+
+All backlinks generated automatically.
+
+---
+
+# Search System
+
+## Full Text Search
+
+Search entire archive.
+
+---
+
+## Document Search
+
+Search titles and metadata.
+
+---
+
+## Paragraph Search
+
+Search paragraph content.
+
+---
+
+## Sentence Search
+
+Search sentence content.
+
+---
+
+## Character Search
+
+All content involving a character.
+
+---
+
+## Song Search
+
+All content involving a song.
+
+---
+
+## Event Search
+
+All content involving an event.
+
+---
+
+## Tag Search
+
+All content involving a tag.
+
+---
+
+## Timeline Search
+
+Search by date ranges.
+
+---
+
+## Advanced Search
+
+Examples:
+
+character=tomori
+
+song=haruhikage
+
+event=crychic-breakup
+
+tag=regret
+
+type=radio
+
+date>2023
+
+speaker=sakiko
+
+---
+
+# Timeline System
+
+Generate automatically.
+
+Views:
+
+Year
+
+Month
+
+Anime Timeline
+
+MyGO Timeline
+
+Ave Mujica Timeline
+
+Character Timeline
+
+Song Timeline
+
+Event Timeline
+
+---
+
+# Knowledge Graph
+
+Use Cytoscape.js.
+
+Node Types:
+
+Document
+
+Section
+
+Paragraph
+
+Sentence
+
+Character
+
+Song
+
+Event
+
+Tag
+
+Edge Types:
+
+mentions
+
+appears_in
+
+references
+
+same_topic
+
+same_character
+
+same_song
+
+same_event
+
+same_tag
+
+responds_to
+
+related_to
+
+Features:
+
+zoom
+
+pan
+
+focus mode
+
+entity filtering
+
+relationship filtering
+
+path exploration
+
+---
+
+# Recommendation System
+
+Every node shows:
+
+Related Documents
+
+Related Paragraphs
+
+Related Sentences
+
+Related Characters
+
+Related Songs
+
+Related Events
+
+Top results based on relationship score.
+
+No AI required.
+
+---
+
+# Site Structure
+
+Home
+
+Characters
+
+Songs
+
+Episodes
+
+Events
+
+Radio
+
+Interviews
+
+Lives
+
+Tags
+
+Timeline
+
+Knowledge Graph
+
+Search
+
+About
+
+---
+
+# URL Structure
+
+/characters/tomori
+
+/songs/haruhikage
+
+/events/crychic-breakup
+
+/radio/12
+
+/interviews/interview-001
+
+/tags/regret
+
+/timeline/2023
+
+/sentence/sent-001
+
+/paragraph/para-001
+
+---
+
+# Import Pipeline
+
+Goal:
+
+Minimize manual work.
+
+---
+
+## Import Method 1
+
+Markdown
+
+Input:
+
+Markdown file
+
+Process:
+
+Parse metadata
+
+Split sections
+
+Split paragraphs
+
+Split sentences
+
+Generate IDs
+
+Generate graph
+
+---
+
+## Import Method 2
+
+TXT
+
+Input:
+
+Raw transcript
+
+Process:
+
+Convert
+
+Split
+
+Generate metadata
+
+Generate graph
+
+---
+
+## Import Method 3
+
+JSON
+
+Input:
+
+Structured JSON
+
+Process:
+
+Import directly
+
+Generate graph
+
+---
+
+## Import Method 4
+
+HTML
+
+Input:
+
+Saved webpage
+
+Process:
+
+Extract content
+
+Convert Markdown
+
+Generate graph
+
+---
+
+## Import Method 5
+
+Bulk Import
+
+Folder import
+
+Batch processing
+
+Generate all metadata automatically
+
+---
+
+# Build Pipeline
+
+Step 1
+
+Load content
+
+Step 2
+
+Parse metadata
+
+Step 3
+
+Create entities
+
+Step 4
+
+Split into sections
+
+Step 5
+
+Split into paragraphs
+
+Step 6
+
+Split into sentences
+
+Step 7
+
+Generate IDs
+
+Step 8
+
+Build entity index
+
+Step 9
+
+Build tag index
+
+Step 10
+
+Build graph edges
+
+Step 11
+
+Generate backlinks
+
+Step 12
+
+Generate recommendations
+
+Step 13
+
+Generate search index
+
+Step 14
+
+Generate static pages
+
+Step 15
+
+Deploy to GitHub Pages
+
+---
+
+# Contributor Workflow
+
+Content stored in Git.
+
+Contributors can:
+
+Add markdown files
+
+Edit metadata
+
+Add annotations
+
+Add tags
+
+Submit Pull Requests
+
+Site rebuilds automatically.
+
+---
+
+# Future Phase 1
+
+Archive
+
+Metadata
+
+Search
+
+Timeline
+
+Entity Pages
+
+---
+
+# Future Phase 2
+
+Sentence-level Graph
+
+Backlinks
+
+Recommendations
+
+Graph Explorer
+
+---
+
+# Future Phase 3
+
+Advanced Query Language
+
+Relationship Explorer
+
+Graph Analytics
+
+Cross-document References
+
+---
+
+# Future Phase 4
+
+Graph RAG
+
+Local embeddings
+
+Client-side retrieval
+
+Question answering
+
+Knowledge path discovery
+
+No server dependency required.
+
+---
+
+# Success Criteria
+
+A user should be able to start from:
+
+A sentence
+
+A song
+
+A character
+
+An event
+
+A radio episode
+
+An interview
+
+A tag
+
+and continuously navigate through related knowledge without reaching dead ends.
+
+The archive should feel like a living interconnected knowledge network rather than a collection of isolated documents.

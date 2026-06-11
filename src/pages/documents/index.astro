@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const documents = await getCollection('documents');
+---
+<BaseLayout title="Documents" description="All documents in the MyGO Knowledge Graph">
+  <section class="list-page">
+    <h1>Documents</h1>
+    {documents.length === 0 ? (
+      <p class="empty">No documents yet. Add .md files to <code>src/content/documents/</code> to get started.</p>
+    ) : (
+      <div class="entity-list">
+        {documents.map((doc) => (
+          <a href={`/documents/${doc.id}`} class="entity-card">
+            <h3>{doc.data.title}</h3>
+            <span class="doc-type">{doc.data.type}</span>
+            {doc.data.date && <p class="doc-date">{doc.data.date}</p>}
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>
+
+<style>
+  .empty {
+    text-align: center;
+    color: var(--muted-color);
+    padding: 3rem;
+  }
+  .doc-type {
+    font-size: 0.75rem;
+    background: var(--border-color);
+    padding: 0.1rem 0.5rem;
+    border-radius: 3px;
+    color: var(--muted-color);
+  }
+  .doc-date {
+    font-size: 0.85rem;
+    color: var(--muted-color);
+    margin-top: 0.25rem;
+  }
+</style>

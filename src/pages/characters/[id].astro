@@ -1,0 +1,48 @@
+---
+import EntityLayout from '../../layouts/EntityLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const characters = await getCollection('characters');
+  return characters.map((char) => ({
+    params: { id: char.id },
+    props: { character: char },
+  }));
+}
+
+const { character } = Astro.props;
+const { Content } = await character.render();
+---
+<EntityLayout
+  title={character.data.name}
+  entityId={character.id}
+  entityType="character"
+  description={character.data.description}
+>
+  <h1>{character.data.name}</h1>
+  {character.data.nameJa && <p class="name-ja">{character.data.nameJa}</p>}
+  {character.data.image && <img src={character.data.image} alt={character.data.name} class="character-image" />}
+  
+  <div class="entity-meta">
+    <div class="meta-item">
+      <span class="meta-label">Group</span>
+      <span class="meta-value">{character.data.group}</span>
+    </div>
+    {character.data.voiceActor && (
+      <div class="meta-item">
+        <span class="meta-label">Voice Actor</span>
+        <span class="meta-value">{character.data.voiceActor}</span>
+      </div>
+    )}
+    {character.data.aliases.length > 0 && (
+      <div class="meta-item">
+        <span class="meta-label">Aliases</span>
+        <span class="meta-value">{character.data.aliases.join(', ')}</span>
+      </div>
+    )}
+  </div>
+
+  <div class="entity-description">
+    <Content />
+  </div>
+</EntityLayout>

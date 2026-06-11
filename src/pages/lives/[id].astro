@@ -1,0 +1,51 @@
+---
+import EntityLayout from '../../layouts/EntityLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const lives = await getCollection('lives');
+  return lives.map((live) => ({
+    params: { id: live.id },
+    props: { live },
+  }));
+}
+
+const { live } = Astro.props;
+const { Content } = await live.render();
+---
+<EntityLayout
+  title={live.data.title}
+  entityId={live.id}
+  entityType="live"
+>
+  <h1>{live.data.title}</h1>
+  
+  <div class="entity-meta">
+    <div class="meta-item">
+      <span class="meta-label">Venue</span>
+      <span class="meta-value">{live.data.venue}</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Date</span>
+      <span class="meta-value">{live.data.date}</span>
+    </div>
+    {live.data.participants?.length > 0 && (
+      <div class="meta-item">
+        <span class="meta-label">Participants</span>
+        <span class="meta-value">{live.data.participants.join(', ')}</span>
+      </div>
+    )}
+    {live.data.setlist?.length > 0 && (
+      <div class="meta-item">
+        <span class="meta-label">Setlist</span>
+        <ol class="setlist">
+          {live.data.setlist.map((song) => <li>{song}</li>)}
+        </ol>
+      </div>
+    )}
+  </div>
+
+  <div class="entity-description">
+    <Content />
+  </div>
+</EntityLayout>

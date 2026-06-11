@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const tags = await getCollection('tags');
+---
+<BaseLayout title="Tags" description="Browse by tags in the MyGO Knowledge Graph">
+  <section class="list-page">
+    <h1>Tags</h1>
+    <div class="tag-cloud">
+      {tags.map((tag) => (
+        <a href={`/tags/${tag.id}`} class="tag-item" data-category={tag.data.category}>
+          {tag.data.name}
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

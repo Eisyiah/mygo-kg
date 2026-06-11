@@ -1,0 +1,124 @@
+---
+import DocumentLayout from '../../layouts/DocumentLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  try {
+    const docs = await getCollection('documents');
+    return docs.map((doc) => ({
+      params: { id: doc.id },
+      props: { document: doc },
+    }));
+  } catch {
+    return [];
+  }
+}
+
+const { document } = Astro.props;
+const { Content } = await document.render();
+---
+<DocumentLayout
+  title={document.data.title}
+  docId={document.id}
+  description={`Document: ${document.data.title}`}
+>
+  <p class="breadcrumb">
+    <a href="/">Home</a> / <a href="/documents">Documents</a> / <span>{document.data.title}</span>
+  </p>
+
+  <h1>{document.data.title}</h1>
+
+  <div class="entity-meta">
+    <div class="meta-item">
+      <span class="meta-label">Type</span>
+      <span class="meta-value">{document.data.type}</span>
+    </div>
+    {document.data.date && (
+      <div class="meta-item">
+        <span class="meta-label">Date</span>
+        <span class="meta-value">{document.data.date}</span>
+      </div>
+    )}
+    {document.data.source && (
+      <div class="meta-item">
+        <span class="meta-label">Source</span>
+        <span class="meta-value">{document.data.source}</span>
+      </div>
+    )}
+    <div class="meta-item">
+      <span class="meta-label">ID</span>
+      <span class="meta-value mono">{document.id}</span>
+    </div>
+  </div>
+
+  {document.data.characters?.length > 0 && (
+    <div class="section">
+      <h2>Characters</h2>
+      <div class="tag-list">
+        {document.data.characters.map((c: string) => <a href={`/characters/${c}`} class="tag-link">{c}</a>)}
+      </div>
+    </div>
+  )}
+  {document.data.songs?.length > 0 && (
+    <div class="section">
+      <h2>Songs</h2>
+      <div class="tag-list">
+        {document.data.songs.map((s: string) => <a href={`/songs/${s}`} class="tag-link">{s}</a>)}
+      </div>
+    </div>
+  )}
+  {document.data.events?.length > 0 && (
+    <div class="section">
+      <h2>Events</h2>
+      <div class="tag-list">
+        {document.data.events.map((e: string) => <a href={`/events/${e}`} class="tag-link">{e}</a>)}
+      </div>
+    </div>
+  )}
+  {document.data.tags?.length > 0 && (
+    <div class="section">
+      <h2>Tags</h2>
+      <div class="tag-list">
+        {document.data.tags.map((t: string) => <a href={`/tags/${t}`} class="tag-link">{t}</a>)}
+      </div>
+    </div>
+  )}
+
+  <div class="document-content">
+    <Content />
+  </div>
+</DocumentLayout>
+
+<style>
+  .breadcrumb {
+    font-size: 0.85rem;
+    color: var(--muted-color);
+    margin-bottom: 1rem;
+  }
+  .breadcrumb a { color: var(--accent-color); }
+  .entity-meta { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 1rem 0; }
+  .meta-item { display: flex; flex-direction: column; gap: 0.15rem; }
+  .meta-label { font-size: 0.75rem; color: var(--muted-color); text-transform: uppercase; }
+  .meta-value { font-size: 0.9rem; }
+  .meta-value.mono { font-family: monospace; font-size: 0.8rem; }
+  .section { margin-top: 1.5rem; }
+  .section h2 { font-size: 1rem; margin-bottom: 0.5rem; }
+  .tag-list { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .tag-link {
+    padding: 0.2rem 0.5rem;
+    background: var(--border-color);
+    border-radius: 3px;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+  }
+  .tag-link:hover { background: var(--accent-color); color: white; }
+  .document-content {
+    margin-top: 2rem;
+    line-height: 1.7;
+  }
+  .document-content :global(h2) {
+    margin-top: 1.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+</style>

@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchBox from '../components/search/SearchBox.astro';
+---
+<BaseLayout title="Search" description="Search the MyGO Knowledge Graph">
+  <section class="search-page">
+    <h1>Search</h1>
+    <p class="search-hint">Use advanced query syntax: <code>character=tomori</code>, <code>song=haruhikage</code>, <code>event=crychic-breakup</code>, <code>tag=regret</code>, <code>type=radio</code>, <code>date&gt;2023</code>, <code>speaker=sakiko</code></p>
+    <SearchBox />
+    <p id="result-count" class="result-count"></p>
+    <div id="search-results" class="search-results"></div>
+  </section>
+</BaseLayout>
+
+<style>
+  .search-hint {
+    font-size: 0.85rem;
+    color: var(--muted-color);
+    margin-bottom: 1rem;
+  }
+  .search-hint code {
+    background: var(--border-color);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+  .result-count {
+    font-size: 0.85rem;
+    color: var(--muted-color);
+    margin-top: 0.5rem;
+  }
+</style>

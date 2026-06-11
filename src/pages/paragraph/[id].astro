@@ -1,0 +1,107 @@
+---
+import EntityLayout from '../../layouts/EntityLayout.astro';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+
+export async function getStaticPaths() {
+  try {
+    const dataPath = resolve('public/data/search-index.json');
+    const raw = readFileSync(dataPath, 'utf-8');
+    const entries: { id: string; title: string; text: string; type: string; characters: string[]; songs: string[]; events: string[]; tags: string[]; speaker?: string; date?: string }[] = JSON.parse(raw);
+    const paragraphs = entries.filter(e => e.type === 'paragraph');
+    return paragraphs.map(p => ({
+      params: { id: p.id },
+      props: { paragraph: p },
+    }));
+  } catch {
+    return [];
+  }
+}
+
+const { paragraph } = Astro.props;
+---
+<EntityLayout
+  title={`Paragraph: ${paragraph.title}`}
+  entityId={paragraph.id}
+  entityType="paragraph"
+  description={paragraph.text.substring(0, 160)}
+>
+  <div class="paragraph-page">
+    <p class="breadcrumb">
+      <a href="/">Home</a> / <span>Paragraph</span>
+    </p>
+    <h1>Paragraph</h1>
+    <div class="paragraph-source">Source: {paragraph.title}</div>
+    <div class="paragraph-text">
+      {paragraph.text}
+    </div>
+
+    <div class="entity-meta">
+      <div class="meta-item">
+        <span class="meta-label">ID</span>
+        <span class="meta-value mono">{paragraph.id}</span>
+      </div>
+      {paragraph.date && (
+        <div class="meta-item">
+          <span class="meta-label">Date</span>
+          <span class="meta-value">{paragraph.date}</span>
+        </div>
+      )}
+    </div>
+
+    {paragraph.characters.length > 0 && (
+      <div class="section">
+        <h2>Characters</h2>
+        <div class="tag-list">
+          {paragraph.characters.map(c => <a href={`/characters/${c}`} class="tag-link">{c}</a>)}
+        </div>
+      </div>
+    )}
+    {paragraph.tags.length > 0 && (
+      <div class="section">
+        <h2>Tags</h2>
+        <div class="tag-list">
+          {paragraph.tags.map(t => <a href={`/tags/${t}`} class="tag-link">{t}</a>)}
+        </div>
+      </div>
+    )}
+  </div>
+</EntityLayout>
+
+<style>
+  .breadcrumb {
+    font-size: 0.85rem;
+    color: var(--muted-color);
+    margin-bottom: 1rem;
+  }
+  .breadcrumb a { color: var(--accent-color); }
+  .paragraph-source {
+    font-size: 0.85rem;
+    color: var(--muted-color);
+    margin-bottom: 0.5rem;
+  }
+  .paragraph-text {
+    font-size: 1rem;
+    padding: 1rem;
+    background: var(--border-color);
+    border-radius: 4px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+  }
+  .entity-meta { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 1rem 0; }
+  .meta-item { display: flex; flex-direction: column; gap: 0.15rem; }
+  .meta-label { font-size: 0.75rem; color: var(--muted-color); text-transform: uppercase; }
+  .meta-value { font-size: 0.9rem; }
+  .meta-value.mono { font-family: monospace; font-size: 0.8rem; }
+  .section { margin-top: 1.5rem; }
+  .section h2 { font-size: 1rem; margin-bottom: 0.5rem; }
+  .tag-list { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .tag-link {
+    padding: 0.2rem 0.5rem;
+    background: var(--border-color);
+    border-radius: 3px;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+  }
+  .tag-link:hover { background: var(--accent-color); color: white; }
+</style>

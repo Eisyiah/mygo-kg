@@ -1,0 +1,106 @@
+---
+export interface Props {
+  nodeId: string;
+  limit?: number;
+}
+const { nodeId, limit = 5 } = Astro.props;
+---
+<div class="recommendations" data-node-id={nodeId} data-limit={String(limit)}>
+  <h3 class="recommendations-title">Related</h3>
+  <ul id="recommendations-list" class="recommendations-list">
+    <li class="recommendations-loading">Loading recommendations...</li>
+  </ul>
+</div>
+
+<script>
+  interface Recommendation {
+    id: string;
+    score: number;
+    reasons: string[];
+  }
+
+  async function initRecommendations() {
+    const containers = document.querySelectorAll('.recommendations');
+    for (const container of containers) {
+      const nodeId = (container as HTMLElement).dataset.nodeId;
+      const limit = parseInt((container as HTMLElement).dataset.limit || '5', 10);
+      if (!nodeId) continue;
+
+      const list = container.querySelector('.recommendations-list') as HTMLUListElement;
+      if (!list) continue;
+
+      try {
+        const res = await fetch('/data/relationships.json');
+        const relationships: { nodeId: string; related: Recommendation[] }[] = await res.json();
+        const rel = relationships.find((r) => r.nodeId === nodeId);
+        const recs = rel?.related?.slice(0, limit) || [];
+
+        list.innerHTML = '';
+        if (recs.length === 0) {
+          list.innerHTML = '<li class="no-recommendations">No related items found.</li>';
+        } else {
+          for (const rec of recs) {
+            const li = document.createElement('li');
+            li.className = 'recommendation-entry';
+            const prefix = rec.id.split('-')[0];
+            const typeRoutes: Record<string, string> = {
+              char: '/characters/', song: '/songs/', ep: '/episodes/',
+              event: '/events/', radio: '/radio/', interview: '/interviews/',
+              live: '/lives/', tag: '/tags/', doc: '/documents/',
+              para: '/paragraph/', sent: '/sentence/',
+            };
+            const href = (typeRoutes[prefix] || '/search?q=') + rec.id;
+            li.innerHTML = `
+              <a href="${href}" class="recommendation-link">${rec.id}</a>
+              <span class="recommendation-score">${rec.score}</span>
+              <div class="recommendation-reasons">
+                ${rec.reasons.map((r) => `<span class="reason-tag">${r}</span>`).join(' ')}
+              </div>
+            `;
+            list.appendChild(li);
+          }
+        }
+      } catch {
+        list.innerHTML = '<li class="recommendations-error">Failed to load recommendations.</li>';
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initRecommendations);
+</script>
+
+<style>
+  .recommendations {
+    margin-top: 1.5rem;
+  }
+  .recommendations-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--muted-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.25rem;
+  }
+  .recommendations-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  .recommendation-entry {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .recommendation-link {
+    font-weight: 500;
+  }
+  .recommendation-score {
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    margin-left: 0.5rem;
+  }
+  .reason-tag {
+    font-size: 0.7rem;
+    background: var(--border-color);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    margin-right: 0.25rem;
+  }
+</style>

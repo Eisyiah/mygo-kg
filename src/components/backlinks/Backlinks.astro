@@ -1,0 +1,99 @@
+---
+export interface Props {
+  targetId: string;
+}
+const { targetId } = Astro.props;
+---
+<div class="backlinks" data-target-id={targetId}>
+  <h3 class="backlinks-title">Referenced By</h3>
+  <ul id="backlinks-list" class="backlinks-list">
+    <li class="backlinks-loading">Loading backlinks...</li>
+  </ul>
+</div>
+
+<script>
+  interface BacklinkEntry {
+    sourceId: string;
+    sourceType: string;
+    sourceTitle: string;
+    context: string;
+  }
+
+  async function initBacklinks() {
+    const containers = document.querySelectorAll('.backlinks');
+    for (const container of containers) {
+      const targetId = (container as HTMLElement).dataset.targetId;
+      if (!targetId) continue;
+
+      const list = container.querySelector('.backlinks-list') as HTMLUListElement;
+      if (!list) continue;
+
+      try {
+        const res = await fetch('/data/backlinks.json');
+        const backlinks: Record<string, BacklinkEntry[]> = await res.json();
+        const entries = backlinks[targetId] || [];
+
+        list.innerHTML = '';
+        if (entries.length === 0) {
+          list.innerHTML = '<li class="no-backlinks">No backlinks found.</li>';
+        } else {
+          for (const entry of entries) {
+            const li = document.createElement('li');
+            li.className = 'backlink-entry';
+            const typeRoutes: Record<string, string> = {
+              character: '/characters/', song: '/songs/', event: '/events/',
+              episode: '/episodes/', tag: '/tags/', document: '/documents/',
+              paragraph: '/paragraph/', sentence: '/sentence/',
+            };
+            const base = typeRoutes[entry.sourceType] || '/search?q=';
+            const href = base.startsWith('/search') ? `${base}${encodeURIComponent(entry.sourceId)}` : `${base}${entry.sourceId}`;
+            li.innerHTML = `
+              <a href="${href}" class="backlink-link">${entry.sourceTitle}</a>
+              <span class="backlink-type">${entry.sourceType}</span>
+              <p class="backlink-context">${entry.context}</p>
+            `;
+            list.appendChild(li);
+          }
+        }
+      } catch {
+        list.innerHTML = '<li class="backlinks-error">Failed to load backlinks.</li>';
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initBacklinks);
+</script>
+
+<style>
+  .backlinks {
+    margin-top: 1.5rem;
+  }
+  .backlinks-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--muted-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.25rem;
+  }
+  .backlinks-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  .backlink-entry {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .backlink-link {
+    font-weight: 500;
+  }
+  .backlink-type {
+    font-size: 0.75rem;
+    color: var(--muted-color);
+    margin-left: 0.5rem;
+  }
+  .backlink-context {
+    font-size: 0.85rem;
+    color: var(--muted-color);
+    margin-top: 0.25rem;
+  }
+</style>

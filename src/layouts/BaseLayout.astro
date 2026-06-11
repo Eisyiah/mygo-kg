@@ -1,0 +1,96 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = 'MyGO Knowledge Graph Archive' } = Astro.props;
+---
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} | MyGO KG</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <a href="/" class="nav-brand">MyGO KG</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="/characters">Characters</a>
+        <a href="/songs">Songs</a>
+        <a href="/episodes">Episodes</a>
+        <a href="/events">Events</a>
+        <a href="/radio">Radio</a>
+        <a href="/interviews">Interviews</a>
+        <a href="/lives">Lives</a>
+        <a href="/tags">Tags</a>
+        <a href="/timeline">Timeline</a>
+        <a href="/graph">Graph</a>
+        <a href="/search">Search</a>
+        <a href="/about">About</a>
+      </div>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon-dark">&#9790;</span>
+          <span class="theme-icon-light">&#9728;</span>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <slot />
+    </main>
+    <footer class="main-footer">
+      <p>MyGO Knowledge Graph Archive &mdash; Built with Astro</p>
+    </footer>
+  </body>
+</html>
+
+<script>
+  function applyTheme(theme: string) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }
+
+  function getPreferredTheme(): string {
+    const stored = localStorage.getItem('theme');
+    if (stored) return stored;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  applyTheme(getPreferredTheme());
+
+  const themeBtn = document.getElementById('theme-toggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  }
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.classList.toggle('open', isOpen);
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menuToggle.contains(e.target as Node) && !navLinks.contains(e.target as Node)) {
+        navLinks.classList.remove('open');
+        menuToggle.classList.remove('open');
+      }
+    });
+  }
+</script>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

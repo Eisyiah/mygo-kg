@@ -1,0 +1,60 @@
+---
+import EntityLayout from '../../layouts/EntityLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const songs = await getCollection('songs');
+  return songs.map((song) => ({
+    params: { id: song.id },
+    props: { song },
+  }));
+}
+
+const { song } = Astro.props;
+const { Content } = await song.render();
+---
+<EntityLayout
+  title={song.data.title}
+  entityId={song.id}
+  entityType="song"
+>
+  <h1>{song.data.title}</h1>
+  {song.data.titleJa && <p class="title-ja">{song.data.titleJa}</p>}
+  
+  <div class="entity-meta">
+    {song.data.album && (
+      <div class="meta-item">
+        <span class="meta-label">Album</span>
+        <span class="meta-value">{song.data.album}</span>
+      </div>
+    )}
+    {song.data.releaseDate && (
+      <div class="meta-item">
+        <span class="meta-label">Release Date</span>
+        <span class="meta-value">{song.data.releaseDate}</span>
+      </div>
+    )}
+    {song.data.composer && (
+      <div class="meta-item">
+        <span class="meta-label">Composer</span>
+        <span class="meta-value">{song.data.composer}</span>
+      </div>
+    )}
+    {song.data.lyricist && (
+      <div class="meta-item">
+        <span class="meta-label">Lyricist</span>
+        <span class="meta-value">{song.data.lyricist}</span>
+      </div>
+    )}
+    {song.data.performers.length > 0 && (
+      <div class="meta-item">
+        <span class="meta-label">Performers</span>
+        <span class="meta-value">{song.data.performers.join(', ')}</span>
+      </div>
+    )}
+  </div>
+
+  <div class="entity-description">
+    <Content />
+  </div>
+</EntityLayout>

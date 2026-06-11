@@ -1,0 +1,479 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import KnowledgeGraph from '../components/graph/KnowledgeGraph.astro';
+---
+<BaseLayout title="Knowledge Graph" description="Interactive knowledge graph visualization">
+  <section class="graph-page">
+    <h1>Knowledge Graph</h1>
+
+    <div class="graph-tabs">
+      <button class="tab-btn active" data-tab="graph">Graph</button>
+      <button class="tab-btn" data-tab="analytics">Analytics</button>
+      <button class="tab-btn" data-tab="query">Query</button>
+    </div>
+
+    <div class="graph-controls" id="tab-graph">
+      <label><input type="checkbox" value="character" checked /> Characters</label>
+      <label><input type="checkbox" value="song" checked /> Songs</label>
+      <label><input type="checkbox" value="event" checked /> Events</label>
+      <label><input type="checkbox" value="episode" checked /> Episodes</label>
+      <label><input type="checkbox" value="tag" checked /> Tags</label>
+    </div>
+    <KnowledgeGraph />
+
+    <div class="tab-panel" id="tab-analytics" style="display:none">
+      <div class="analytics-controls">
+        <select id="metric-select">
+          <option value="pagerank">PageRank</option>
+          <option value="degree">Degree Centrality</option>
+          <option value="betweenness">Betweenness Centrality</option>
+        </select>
+        <button id="compute-metrics" class="btn">Compute</button>
+        <span id="metrics-status" class="metrics-status"></span>
+      </div>
+      <div id="metrics-output" class="metrics-output"></div>
+    </div>
+
+    <div class="tab-panel" id="tab-query" style="display:none">
+      <div class="query-help">
+        <p>Query syntax:</p>
+        <ul>
+          <li><code>path:char-tomori->char-sakiko</code> - Find path between nodes</li>
+          <li><code>related:char-tomori</code> - Find all related nodes</li>
+          <li><code>top:character:10</code> - Top 10 characters by degree</li>
+          <li><code>type=character</code> - Filter by type in search</li>
+        </ul>
+      </div>
+      <div class="query-input-group">
+        <input type="text" id="query-input" placeholder="e.g. path:char-tomori->char-sakiko" class="query-input" />
+        <button id="run-query" class="btn">Run</button>
+      </div>
+      <div id="query-results" class="query-results"></div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  // ── Tab switching ──
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.tab-btn');
+    const panels: Record<string, HTMLElement | null> = {
+      graph: document.getElementById('tab-graph'),
+      analytics: document.getElementById('tab-analytics'),
+      query: document.getElementById('tab-query'),
+    };
+    const graphContainer = document.querySelector('.knowledge-graph') as HTMLElement;
+
+    tabs.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        tabs.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        const tab = (btn as HTMLElement).dataset.tab || 'graph';
+
+        for (const [key, panel] of Object.entries(panels)) {
+          if (panel) panel.style.display = key === tab ? '' : 'none';
+        }
+        if (graphContainer) {
+          graphContainer.style.display = tab === 'graph' ? '' : 'none';
+        }
+      });
+    });
+
+    // ── Analytics ──
+    const computeBtn = document.getElementById('compute-metrics');
+    const metricSelect = document.getElementById('metric-select') as HTMLSelectElement;
+    const metricsStatus = document.getElementById('metrics-status');
+    const metricsOutput = document.getElementById('metrics-output');
+
+    computeBtn?.addEventListener('click', async () => {
+      if (!metricsStatus) return;
+      metricsStatus.textContent = 'Computing...';
+
+      try {
+        const res = await fetch('/data/graph.json');
+        const graphData = await res.json();
+
+        // Simple client-side PageRank
+        const metric = metricSelect?.value || 'pagerank';
+        const nodes = graphData.nodes || [];
+        const edges = graphData.edges || [];
+
+        // Build adjacency
+        const outEdges = new Map<string, string[]>();
+        const inEdges = new Map<string, string[]>();
+        for (const n of nodes) {
+          outEdges.set(n.data.id, []);
+          inEdges.set(n.data.id, []);
+        }
+        for (const e of edges) {
+          const src = e.data.source;
+          const tgt = e.data.target;
+          if (!outEdges.has(src)) outEdges.set(src, []);
+          if (!inEdges.has(tgt)) inEdges.set(tgt, []);
+          outEdges.get(src)!.push(tgt);
+          inEdges.get(tgt)!.push(src);
+        }
+
+        let scores: Map<string, number>;
+
+        if (metric === 'degree') {
+          scores = new Map();
+          for (const [id, out] of outEdges) {
+            scores.set(id, out.length + (inEdges.get(id)?.length || 0));
+          }
+        } else if (metric === 'pagerank') {
+          scores = pageRank(outEdges, nodes.map((n: any) => n.data.id));
+        } else {
+          // betweenness approximation
+          scores = betweenness(outEdges, nodes.map((n: any) => n.data.id));
+        }
+
+        const sorted = [...scores.entries()]
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 30);
+
+        const nodeMap = new Map<string, string>();
+        for (const n of nodes) {
+          nodeMap.set(n.data.id, n.data.label);
+        }
+
+        if (metricsOutput) {
+          metricsOutput.innerHTML = `
+            <table class="metrics-table">
+              <thead>
+                <tr><th>#</th><th>Node</th><th>Type</th><th>${metric}</th></tr>
+              </thead>
+              <tbody>
+                ${sorted.map(([id, score], i) => {
+                  const prefix = id.split('-')[0];
+                  const routes: Record<string, string> = { char: '/characters/', song: '/songs/', ep: '/episodes/', event: '/events/', tag: '/tags/' };
+                  const href = (routes[prefix] || '#') + id;
+                  return `<tr>
+                    <td>${i + 1}</td>
+                    <td><a href="${href}">${nodeMap.get(id) || id}</a></td>
+                    <td>${id.split('-')[0]}</td>
+                    <td>${score.toFixed(4)}</td>
+                  </tr>`;
+                }).join('')}
+              </tbody>
+            </table>
+          `;
+        }
+
+        if (metricsStatus) metricsStatus.textContent = 'Done.';
+      } catch (err) {
+        if (metricsStatus) metricsStatus.textContent = 'Failed to compute.';
+      }
+    });
+
+    function pageRank(outEdges: Map<string, string[]>, ids: string[]): Map<string, number> {
+      const N = ids.length;
+      const d = 0.85;
+      const ranks = new Map<string, number>();
+      for (const id of ids) ranks.set(id, 1 / N);
+
+      for (let iter = 0; iter < 40; iter++) {
+        let dangling = 0;
+        for (const id of ids) {
+          const out = outEdges.get(id) || [];
+          if (out.length === 0) dangling += ranks.get(id)!;
+        }
+        const newRanks = new Map<string, number>();
+        for (const id of ids) {
+          let sum = 0;
+          for (const [src, outs] of outEdges) {
+            if (outs.includes(id) && outs.length > 0) {
+              sum += ranks.get(src)! / outs.length;
+            }
+          }
+          newRanks.set(id, (1 - d) / N + d * (sum + dangling / N));
+        }
+        for (const [id, r] of newRanks) ranks.set(id, r);
+      }
+      return ranks;
+    }
+
+    function betweenness(outEdges: Map<string, string[]>, ids: string[]): Map<string, number> {
+      const cb = new Map<string, number>();
+      for (const id of ids) cb.set(id, 0);
+
+      const sources = ids.slice(0, Math.min(30, ids.length));
+      for (const s of sources) {
+        const stack: string[] = [];
+        const pred = new Map<string, string[]>();
+        const sigma = new Map<string, number>();
+        const dist = new Map<string, number>();
+        const delta = new Map<string, number>();
+
+        for (const id of ids) {
+          pred.set(id, []);
+          sigma.set(id, 0);
+          dist.set(id, -1);
+          delta.set(id, 0);
+        }
+
+        sigma.set(s, 1);
+        dist.set(s, 0);
+        const queue = [s];
+
+        while (queue.length > 0) {
+          const v = queue.shift()!;
+          stack.push(v);
+          const d = dist.get(v)! + 1;
+          for (const w of outEdges.get(v) || []) {
+            if (dist.get(w)! < 0) {
+              dist.set(w, d);
+              queue.push(w);
+            }
+            if (dist.get(w) === d) {
+              sigma.set(w, sigma.get(w)! + sigma.get(v)!);
+              pred.get(w)!.push(v);
+            }
+          }
+        }
+
+        while (stack.length > 0) {
+          const w = stack.pop()!;
+          for (const v of pred.get(w) || []) {
+            delta.set(v, delta.get(v)! + (sigma.get(v)! / (sigma.get(w)! || 1)) * (1 + delta.get(w)!));
+          }
+          if (w !== s) {
+            cb.set(w, cb.get(w)! + delta.get(w)!);
+          }
+        }
+      }
+      return cb;
+    }
+
+    // ── Query ──
+    const queryInput = document.getElementById('query-input') as HTMLInputElement;
+    const runQueryBtn = document.getElementById('run-query');
+    const queryResults = document.getElementById('query-results');
+
+    runQueryBtn?.addEventListener('click', async () => {
+      if (!queryInput || !queryResults) return;
+      const q = queryInput.value.trim();
+      if (!q) return;
+
+      try {
+        const res = await fetch('/data/graph.json');
+        const graphData = await res.json();
+        const nodes = graphData.nodes || [];
+        const edges = graphData.edges || [];
+
+        const nodeLookup = new Map<string, any>();
+        for (const n of nodes) nodeLookup.set(n.data.id, n.data);
+
+        let html = '';
+
+        if (q.startsWith('path:')) {
+          const match = q.match(/^path:\s*(\S+)\s*->\s*(\S+)/);
+          if (!match) { queryResults.innerHTML = '<p>Format: path:source->target</p>'; return; }
+          const [_, src, tgt] = match;
+          const path = bfs(src, tgt, edges.map((e: any) => ({ source: e.data.source, target: e.data.target })));
+          if (path) {
+            html = `<p>Path found (${path.length - 1} hops):</p><div class="query-path">${path.map((id: string) => `<span class="path-node">${nodeLookup.get(id)?.label || id}</span>`).join(' → ')}</div>`;
+          } else {
+            html = `<p>No path found between ${src} and ${tgt}</p>`;
+          }
+        } else if (q.startsWith('related:')) {
+          const target = q.replace(/^related:\s*/, '').trim();
+          const relIds = new Set<string>();
+          for (const e of edges) {
+            if (e.data.source === target) relIds.add(e.data.target);
+            if (e.data.target === target) relIds.add(e.data.source);
+          }
+          const relNodes = nodes.filter((n: any) => relIds.has(n.data.id));
+          html = `<p>${relNodes.length} related nodes:</p><div class="query-node-list">${relNodes.map((n: any) => {
+            const prefix = n.data.id.split('-')[0];
+            const routes: Record<string, string> = { char: '/characters/', song: '/songs/', ep: '/episodes/', event: '/events/', tag: '/tags/' };
+            return `<a href="${(routes[prefix] || '#') + n.data.id}" class="query-node">${n.data.label}</a>`;
+          }).join('')}</div>`;
+        } else if (q.startsWith('top:')) {
+          const match = q.match(/^top:\s*(\w+)(?::(\d+))?/);
+          const type = match?.[1] || '';
+          const limit = parseInt(match?.[2] || '20', 10);
+          let filtered = type ? nodes.filter((n: any) => n.data.type === type) : nodes;
+          filtered = filtered.sort((a: any, b: any) => {
+            const degA = edges.filter((e: any) => e.data.source === a.data.id || e.data.target === a.data.id).length;
+            const degB = edges.filter((e: any) => e.data.source === b.data.id || e.data.target === b.data.id).length;
+            return degB - degA;
+          }).slice(0, limit);
+          html = `<p>Top ${limit} nodes${type ? ` (type: ${type})` : ''}:</p><div class="query-node-list">${filtered.map((n: any) => {
+            const deg = edges.filter((e: any) => e.data.source === n.data.id || e.data.target === n.data.id).length;
+            const prefix = n.data.id.split('-')[0];
+            const routes: Record<string, string> = { char: '/characters/', song: '/songs/', ep: '/episodes/', event: '/events/', tag: '/tags/' };
+            return `<a href="${(routes[prefix] || '#') + n.data.id}" class="query-node">${n.data.label} <span class="deg">(${deg})</span></a>`;
+          }).join('')}</div>`;
+        } else {
+          html = '<p>Use: <code>path:a->b</code>, <code>related:id</code>, <code>top:type:N</code></p>';
+        }
+
+        queryResults.innerHTML = html;
+      } catch (err) {
+        if (queryResults) queryResults.innerHTML = '<p>Query failed.</p>';
+      }
+    });
+
+    function bfs(source: string, target: string, edgeList: { source: string; target: string }[]): string[] | null {
+      const adj = new Map<string, string[]>();
+      for (const e of edgeList) {
+        if (!adj.has(e.source)) adj.set(e.source, []);
+        adj.get(e.source)!.push(e.target);
+      }
+
+      const visited = new Set<string>();
+      const parent = new Map<string, string>();
+      const queue = [source];
+      visited.add(source);
+
+      while (queue.length > 0) {
+        const cur = queue.shift()!;
+        if (cur === target) {
+          const path = [target];
+          let node = target;
+          while (node !== source) { node = parent.get(node)!; path.unshift(node); }
+          return path;
+        }
+        for (const next of adj.get(cur) || []) {
+          if (!visited.has(next)) {
+            visited.add(next);
+            parent.set(next, cur);
+            queue.push(next);
+          }
+        }
+      }
+      return null;
+    }
+  });
+</script>
+
+<style>
+  .graph-tabs {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  .tab-btn {
+    padding: 0.5rem 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px 4px 0 0;
+    color: var(--muted-color);
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .tab-btn.active {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+  }
+  .tab-panel {
+    margin-top: 1rem;
+  }
+  .analytics-controls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .analytics-controls select {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .btn:hover { opacity: 0.9; }
+  .metrics-status { font-size: 0.85rem; color: var(--muted-color); }
+  .metrics-output { margin-top: 1rem; }
+  .metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  .metrics-table th, .metrics-table td {
+    padding: 0.4rem 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+  }
+  .metrics-table th {
+    color: var(--muted-color);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  .query-help {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+  }
+  .query-help ul {
+    margin-top: 0.5rem;
+    padding-left: 1.25rem;
+  }
+  .query-help code {
+    background: var(--border-color);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+  .query-input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .query-input {
+    flex: 1;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-family: monospace;
+  }
+  .query-results { margin-top: 1rem; }
+  .query-path {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    color: var(--accent-color);
+  }
+  .path-node {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--text-color);
+  }
+  .query-node-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.5rem;
+  }
+  .query-node {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+  .query-node:hover { border-color: var(--accent-color); }
+  .deg { color: var(--muted-color); font-size: 0.75rem; }
+</style>

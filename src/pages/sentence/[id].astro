@@ -1,0 +1,122 @@
+---
+import EntityLayout from '../../layouts/EntityLayout.astro';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+
+export async function getStaticPaths() {
+  try {
+    const dataPath = resolve('public/data/search-index.json');
+    const raw = readFileSync(dataPath, 'utf-8');
+    const entries: { id: string; title: string; text: string; type: string; characters: string[]; songs: string[]; events: string[]; tags: string[]; speaker?: string; date?: string }[] = JSON.parse(raw);
+    const sentences = entries.filter(e => e.type === 'sentence');
+    return sentences.map(s => ({
+      params: { id: s.id },
+      props: { sentence: s },
+    }));
+  } catch {
+    return [];
+  }
+}
+
+const { sentence } = Astro.props;
+---
+<EntityLayout
+  title={`Sentence: ${sentence.text.substring(0, 60)}`}
+  entityId={sentence.id}
+  entityType="sentence"
+  description={sentence.text.substring(0, 160)}
+>
+  <div class="sentence-page">
+    <p class="breadcrumb">
+      <a href="/">Home</a> / <span>Sentence</span>
+    </p>
+    <h1 class="sentence-title">Sentence</h1>
+    <blockquote class="sentence-text">{sentence.text}</blockquote>
+
+    <div class="entity-meta">
+      {sentence.speaker && (
+        <div class="meta-item">
+          <span class="meta-label">Speaker</span>
+          <span class="meta-value">{sentence.speaker}</span>
+        </div>
+      )}
+      {sentence.date && (
+        <div class="meta-item">
+          <span class="meta-label">Date</span>
+          <span class="meta-value">{sentence.date}</span>
+        </div>
+      )}
+      <div class="meta-item">
+        <span class="meta-label">ID</span>
+        <span class="meta-value mono">{sentence.id}</span>
+      </div>
+    </div>
+
+    {sentence.characters.length > 0 && (
+      <div class="section">
+        <h2>Characters</h2>
+        <div class="tag-list">
+          {sentence.characters.map(c => <a href={`/characters/${c}`} class="tag-link">{c}</a>)}
+        </div>
+      </div>
+    )}
+    {sentence.songs.length > 0 && (
+      <div class="section">
+        <h2>Songs</h2>
+        <div class="tag-list">
+          {sentence.songs.map(s => <a href={`/songs/${s}`} class="tag-link">{s}</a>)}
+        </div>
+      </div>
+    )}
+    {sentence.events.length > 0 && (
+      <div class="section">
+        <h2>Events</h2>
+        <div class="tag-list">
+          {sentence.events.map(e => <a href={`/events/${e}`} class="tag-link">{e}</a>)}
+        </div>
+      </div>
+    )}
+    {sentence.tags.length > 0 && (
+      <div class="section">
+        <h2>Tags</h2>
+        <div class="tag-list">
+          {sentence.tags.map(t => <a href={`/tags/${t}`} class="tag-link">{t}</a>)}
+        </div>
+      </div>
+    )}
+  </div>
+</EntityLayout>
+
+<style>
+  .breadcrumb {
+    font-size: 0.85rem;
+    color: var(--muted-color);
+    margin-bottom: 1rem;
+  }
+  .breadcrumb a { color: var(--accent-color); }
+  .sentence-text {
+    font-size: 1.15rem;
+    padding: 1rem;
+    border-left: 3px solid var(--accent-color);
+    background: var(--border-color);
+    border-radius: 0 4px 4px 0;
+    margin: 1rem 0;
+    line-height: 1.6;
+  }
+  .entity-meta { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 1rem 0; }
+  .meta-item { display: flex; flex-direction: column; gap: 0.15rem; }
+  .meta-label { font-size: 0.75rem; color: var(--muted-color); text-transform: uppercase; }
+  .meta-value { font-size: 0.9rem; }
+  .meta-value.mono { font-family: monospace; font-size: 0.8rem; }
+  .section { margin-top: 1.5rem; }
+  .section h2 { font-size: 1rem; margin-bottom: 0.5rem; }
+  .tag-list { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .tag-link {
+    padding: 0.2rem 0.5rem;
+    background: var(--border-color);
+    border-radius: 3px;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+  }
+  .tag-link:hover { background: var(--accent-color); color: white; }
+</style>

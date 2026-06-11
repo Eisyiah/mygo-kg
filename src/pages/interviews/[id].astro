@@ -1,0 +1,45 @@
+---
+import EntityLayout from '../../layouts/EntityLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const interviews = await getCollection('interviews');
+  return interviews.map((intv) => ({
+    params: { id: intv.id },
+    props: { interview: intv },
+  }));
+}
+
+const { interview } = Astro.props;
+const { Content } = await interview.render();
+---
+<EntityLayout
+  title={interview.data.title}
+  entityId={interview.id}
+  entityType="interview"
+>
+  <h1>{interview.data.title}</h1>
+  
+  <div class="entity-meta">
+    <div class="meta-item">
+      <span class="meta-label">Date</span>
+      <span class="meta-value">{interview.data.date}</span>
+    </div>
+    {interview.data.participants?.length > 0 && (
+      <div class="meta-item">
+        <span class="meta-label">Participants</span>
+        <span class="meta-value">{interview.data.participants.join(', ')}</span>
+      </div>
+    )}
+    {interview.data.source && (
+      <div class="meta-item">
+        <span class="meta-label">Source</span>
+        <span class="meta-value">{interview.data.source}</span>
+      </div>
+    )}
+  </div>
+
+  <div class="entity-description">
+    <Content />
+  </div>
+</EntityLayout>

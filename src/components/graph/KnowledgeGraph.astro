@@ -1,0 +1,308 @@
+---
+export interface Props {
+  height?: string;
+}
+const { height = '600px' } = Astro.props;
+---
+<div id="knowledge-graph-container" class="knowledge-graph" style={`height: ${height}`}>
+  <div id="cy" style="width: 100%; height: 100%;"></div>
+  <div id="graph-tooltip" class="graph-tooltip" style="display: none;"></div>
+  <div class="graph-actions">
+    <button id="graph-fit" title="Fit to screen">Fit</button>
+    <button id="graph-reset" title="Reset view">Reset</button>
+    <button id="graph-focus-toggle" title="Toggle focus mode on selected node">Focus</button>
+  </div>
+</div>
+
+<script>
+  import cytoscape from 'cytoscape';
+
+  const typeColors: Record<string, string> = {
+    character: '#ff6b6b',
+    song: '#4ecdc4',
+    event: '#45b7d1',
+    document: '#96ceb4',
+    sentence: '#ffeaa7',
+    paragraph: '#f9ca24',
+    tag: '#dfe6e9',
+    episode: '#a29bfe',
+    radio: '#fd79a8',
+    interview: '#00b894',
+    live: '#e17055',
+    unknown: '#b2bec3',
+  };
+
+  let cy: cytoscape.Core | null = null;
+  let fullData: { nodes: any[]; edges: any[] } = { nodes: [], edges: [] };
+  let focusNode: string | null = null;
+
+  function getVisibleTypes(): string[] {
+    const types: string[] = [];
+    const checked = document.querySelectorAll<HTMLInputElement>('.graph-controls input[type="checkbox"]:checked');
+    checked.forEach((cb) => {
+      types.push(cb.value);
+    });
+    return types.length === 0 ? [] : types;
+  }
+
+  function filterGraphByTypes(visibleTypes: string[]) {
+    if (!cy) return;
+
+    if (visibleTypes.length === 0) {
+      cy.elements().style('display', 'element');
+      return;
+    }
+
+    cy.batch(() => {
+      cy.nodes().forEach((node) => {
+        const nodeType = node.data('type');
+        const visible = visibleTypes.includes(nodeType);
+        node.style('display', visible ? 'element' : 'none');
+      });
+      cy.edges().forEach((edge) => {
+        const src = edge.source();
+        const tgt = edge.target();
+        const srcVisible = src.style('display') !== 'none';
+        const tgtVisible = tgt.style('display') !== 'none';
+        edge.style('display', srcVisible && tgtVisible ? 'element' : 'none');
+      });
+    });
+  }
+
+  function enterFocusMode(nodeId: string) {
+    if (!cy) return;
+    focusNode = nodeId;
+    const targetNode = cy.getElementById(nodeId);
+    if (!targetNode.length) return;
+
+    const neighborhood = targetNode.closedNeighborhood();
+    cy.batch(() => {
+      cy.elements().style('opacity', '0.15');
+      neighborhood.style('opacity', '1');
+      targetNode.style('opacity', '1');
+      targetNode.style('border-width', '3px');
+      targetNode.style('border-color', '#fff');
+    });
+    cy.animate({ fit: { eles: neighborhood, padding: 50 }, center: { eles: targetNode } });
+  }
+
+  function exitFocusMode() {
+    if (!cy) return;
+    focusNode = null;
+    cy.batch(() => {
+      cy.elements().style('opacity', '1');
+      cy.elements().style('border-width', '0');
+      cy.elements().style('border-color', '');
+    });
+  }
+
+  async function initGraph() {
+    const container = document.getElementById('cy');
+    if (!container) return;
+
+    try {
+      const res = await fetch('/data/graph.json');
+      fullData = await res.json();
+    } catch {
+      fullData = { nodes: [], edges: [] };
+    }
+
+    cy = cytoscape({
+      container,
+      elements: fullData,
+      style: [
+        {
+          selector: 'node',
+          style: {
+            label: 'data(label)',
+            'font-size': '10px',
+            'text-wrap': 'ellipsis',
+            'text-max-width': '80px',
+            'text-valign': 'center',
+            'text-halign': 'center',
+            'background-color': (ele: any) => {
+              const t = ele.data('type');
+              return typeColors[t] || '#999';
+            },
+            width: 'mapdata(weight, 1, 10, 15, 45)',
+            height: 'mapdata(weight, 1, 10, 15, 45)',
+            'border-width': 0,
+          },
+        },
+        {
+          selector: 'edge',
+          style: {
+            width: 'mapdata(weight, 1, 20, 1, 4)',
+            'line-color': '#555',
+            'opacity': 0.4,
+            'curve-style': 'bezier',
+            'target-arrow-shape': 'none',
+          },
+        },
+        {
+          selector: 'node:selected',
+          style: {
+            'border-width': '3px',
+            'border-color': '#fff',
+          },
+        },
+      ],
+      layout: {
+        name: 'cose',
+        animate: true,
+        animationDuration: 1000,
+        nodeRepulsion: () => 8000,
+        idealEdgeLength: () => 100,
+        gravity: 0.25,
+        numIter: 2000,
+        initialTemp: 200,
+        coolingFactor: 0.95,
+      },
+      minZoom: 0.1,
+      maxZoom: 5,
+    });
+
+    // Tooltip on hover
+    const tooltip = document.getElementById('graph-tooltip');
+    cy.on('mouseover', 'node', (evt) => {
+      const node = evt.target;
+      if (tooltip) {
+        tooltip.innerHTML = `<strong>${node.data('label')}</strong><br/><em>${node.data('type')}</em>`;
+        tooltip.style.display = 'block';
+        tooltip.style.left = evt.renderedPosition.x + 10 + 'px';
+        tooltip.style.top = evt.renderedPosition.y - 20 + 'px';
+      }
+    });
+    cy.on('mouseout', 'node', () => {
+      if (tooltip) tooltip.style.display = 'none';
+    });
+    cy.on('mousemove', 'node', (evt) => {
+      if (tooltip && tooltip.style.display === 'block') {
+        tooltip.style.left = evt.renderedPosition.x + 10 + 'px';
+        tooltip.style.top = evt.renderedPosition.y - 20 + 'px';
+      }
+    });
+
+    // Click node: navigate or focus
+    cy.on('tap', 'node', (evt) => {
+      const node = evt.target;
+      const nodeId = node.id();
+      const nodeType = node.data('type');
+
+      if (nodeType === 'character' || nodeType === 'song' || nodeType === 'event' || nodeType === 'tag') {
+        const urlMap: Record<string, string> = {
+          character: '/characters/', song: '/songs/', event: '/events/',
+          episode: '/episodes/', radio: '/radio/', interview: '/interviews/',
+          live: '/lives/', tag: '/tags/', document: '/documents/',
+          paragraph: '/paragraph/', sentence: '/sentence/',
+        };
+        const base = urlMap[nodeType];
+        if (base) {
+          window.location.href = base + nodeId;
+          return;
+        }
+      }
+      window.location.href = `/search?q=${encodeURIComponent(nodeId)}`;
+    });
+
+    // Initialize filters
+    const typeCheckboxes = document.querySelectorAll<HTMLInputElement>('.graph-controls input[type="checkbox"]');
+    typeCheckboxes.forEach((cb) => {
+      cb.addEventListener('change', () => {
+        filterGraphByTypes(getVisibleTypes());
+      });
+    });
+
+    // Fit button
+    const fitBtn = document.getElementById('graph-fit');
+    if (fitBtn) {
+      fitBtn.addEventListener('click', () => {
+        if (focusNode && cy) {
+          enterFocusMode(focusNode);
+        } else {
+          cy?.fit(undefined, 30);
+        }
+      });
+    }
+
+    // Reset button
+    const resetBtn = document.getElementById('graph-reset');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        exitFocusMode();
+        filterGraphByTypes(getVisibleTypes());
+        cy?.fit(undefined, 30);
+      });
+    }
+
+    // Focus toggle
+    const focusBtn = document.getElementById('graph-focus-toggle');
+    if (focusBtn) {
+      focusBtn.addEventListener('click', () => {
+        if (!cy) return;
+        const sel = cy.nodes(':selected');
+        if (sel.length === 0) {
+          alert('Click a node first to focus on it.');
+          return;
+        }
+        if (focusNode) {
+          exitFocusMode();
+        } else {
+          enterFocusMode(sel.id());
+        }
+      });
+    }
+
+    // Keyboard: Esc to exit focus
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && focusNode) {
+        exitFocusMode();
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initGraph);
+</script>
+
+<style>
+  .knowledge-graph {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-color);
+  }
+  .graph-tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    pointer-events: none;
+    z-index: 1000;
+    white-space: nowrap;
+  }
+  .graph-actions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 0.25rem;
+    z-index: 10;
+  }
+  .graph-actions button {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.75rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .graph-actions button:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+  }
+</style>

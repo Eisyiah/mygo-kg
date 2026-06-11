@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TimelineView from '../../components/timeline/Timeline.astro';
+---
+<BaseLayout title="Timeline" description="Chronological timeline of events in the MyGO universe">
+  <section class="timeline-page">
+    <h1>Timeline</h1>
+    <div class="timeline-filters">
+      <select id="timeline-type-filter">
+        <option value="">All Types</option>
+        <option value="character">Characters</option>
+        <option value="song">Songs</option>
+        <option value="episode">Episodes</option>
+        <option value="event">Events</option>
+      </select>
+    </div>
+    <TimelineView />
+  </section>
+</BaseLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filter = document.getElementById('timeline-type-filter') as HTMLSelectElement;
+    if (!filter) return;
+
+    filter.addEventListener('change', () => {
+      const type = filter.value;
+      const entries = document.querySelectorAll('.timeline-entry');
+
+      if (!type) {
+        entries.forEach((el) => {
+          (el as HTMLElement).style.display = '';
+        });
+        // Show all months/years if they have visible children
+        updateVisibility();
+        return;
+      }
+
+      entries.forEach((el) => {
+        const entryType = (el as HTMLElement).dataset.type;
+        (el as HTMLElement).style.display = entryType === type ? '' : 'none';
+      });
+
+      updateVisibility();
+    });
+
+    function updateVisibility() {
+      // Hide empty months and years
+      const months = document.querySelectorAll('.timeline-month');
+      months.forEach((month) => {
+        const visible = month.querySelectorAll('.timeline-entry[style*="display: none"], .timeline-entry:not([style])').length > 0;
+        // Check if any entry is visible (not style="display:none")
+        const entries = month.querySelectorAll('.timeline-entry');
+        let hasVisible = false;
+        entries.forEach((e) => {
+          if ((e as HTMLElement).style.display !== 'none') hasVisible = true;
+        });
+        (month as HTMLElement).style.display = hasVisible ? '' : 'none';
+      });
+
+      const years = document.querySelectorAll('.timeline-year');
+      years.forEach((year) => {
+        const monthsEl = year.querySelectorAll('.timeline-month');
+        let hasVisible = false;
+        monthsEl.forEach((m) => {
+          if ((m as HTMLElement).style.display !== 'none') hasVisible = true;
+        });
+        (year as HTMLElement).style.display = hasVisible ? '' : 'none';
+      });
+    }
+  });
+</script>
+
+<style>
+  .timeline-filters {
+    margin-bottom: 1rem;
+  }
+  .timeline-filters select {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+  }
+</style>

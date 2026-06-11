@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const songs = await getCollection('songs');
+---
+<BaseLayout title="Songs" description="All songs in the MyGO Knowledge Graph">
+  <section class="list-page">
+    <h1>Songs</h1>
+    <div class="entity-list">
+      {songs.map((song) => (
+        <a href={`/songs/${song.id}`} class="entity-card">
+          <h3>{song.data.title}</h3>
+          {song.data.titleJa && <p class="title-ja">{song.data.titleJa}</p>}
+          {song.data.releaseDate && <p class="date">{song.data.releaseDate}</p>}
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,114 @@
+---
+export interface Props {
+  dataPath?: string;
+}
+const { dataPath = '/data/timeline.json' } = Astro.props;
+---
+<div class="timeline-view" data-path={dataPath}>
+  <div id="timeline-container" class="timeline-container">
+    <p class="timeline-loading">Loading timeline data...</p>
+  </div>
+</div>
+
+<script>
+  interface TimelineEntry {
+    id: string;
+    date: string;
+    title: string;
+    type: string;
+    characters?: string[];
+  }
+
+  interface TimelineMonth {
+    year: number;
+    month: number;
+    entries: TimelineEntry[];
+  }
+
+  interface TimelineYear {
+    year: number;
+    months: TimelineMonth[];
+  }
+
+  async function initTimeline() {
+    const container = document.getElementById('timeline-container');
+    if (!container) return;
+
+    try {
+      const res = await fetch('/data/timeline.json');
+      const timeline: TimelineYear[] = await res.json();
+
+      container.innerHTML = '';
+
+      for (const year of timeline) {
+        const yearEl = document.createElement('div');
+        yearEl.className = 'timeline-year';
+        yearEl.innerHTML = `<h2>${year.year}</h2>`;
+
+        for (const month of year.months) {
+          const monthEl = document.createElement('div');
+          monthEl.className = 'timeline-month';
+          monthEl.innerHTML = `<h3>${year.year}/${String(month.month).padStart(2, '0')}</h3>`;
+
+          const list = document.createElement('ul');
+          list.className = 'timeline-entries';
+
+          for (const entry of month.entries) {
+            const li = document.createElement('li');
+            li.className = 'timeline-entry';
+            li.dataset.type = entry.type;
+            li.innerHTML = `
+              <span class="timeline-date">${entry.date}</span>
+              <a href="/search?q=${encodeURIComponent(entry.id)}" class="timeline-title">${entry.title}</a>
+              <span class="timeline-type">${entry.type}</span>
+            `;
+            list.appendChild(li);
+          }
+
+          monthEl.appendChild(list);
+          yearEl.appendChild(monthEl);
+        }
+
+        container.appendChild(yearEl);
+      }
+    } catch (err) {
+      container.innerHTML = '<p>Failed to load timeline data.</p>';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initTimeline);
+</script>
+
+<style>
+  .timeline-year h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+  }
+  .timeline-month h3 {
+    color: var(--accent-color);
+    margin-top: 1rem;
+  }
+  .timeline-entries {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  .timeline-entry {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    padding: 0.25rem 0;
+  }
+  .timeline-date {
+    font-size: 0.85rem;
+    color: var(--muted-color);
+    min-width: 6rem;
+  }
+  .timeline-type {
+    font-size: 0.75rem;
+    background: var(--border-color);
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    color: var(--muted-color);
+  }
+</style>

@@ -1,0 +1,31 @@
+{
+  "name": "mygo-knowledge-graph",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "build:data": "tsx scripts/build-all.ts",
+    "build:relationships": "tsx scripts/build-relationships.ts",
+    "build:search": "tsx scripts/build-search-index.ts",
+    "build:graph": "tsx scripts/build-graph.ts",
+    "build:full": "npm run build:data && npm run build"
+  },
+  "dependencies": {
+    "astro": "^5.7.10",
+    "cytoscape": "^3.32.0",
+    "flexsearch": "^0.7.43",
+    "gray-matter": "^4.0.3",
+    "linkedom": "^0.18.0",
+    "@astrojs/mdx": "^4.2.0",
+    "@astrojs/sitemap": "^3.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "tsx": "^4.19.0",
+    "@types/cytoscape": "^3.21.0"
+  }
+}

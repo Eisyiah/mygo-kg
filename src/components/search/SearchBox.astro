@@ -1,0 +1,386 @@
+---
+export interface Props {
+  placeholder?: string;
+}
+const { placeholder = 'Search the archive...' } = Astro.props;
+---
+<div class="search-box">
+  <form id="search-form" action="/search" method="get">
+    <div class="search-input-group">
+      <input
+        type="search"
+        id="search-input"
+        name="q"
+        placeholder={placeholder}
+        autocomplete="off"
+        class="search-input"
+      />
+      <button type="submit" class="search-button">Search</button>
+    </div>
+    <div class="search-filters">
+      <select id="search-type" name="type">
+        <option value="">All Types</option>
+        <option value="document">Documents</option>
+        <option value="paragraph">Paragraphs</option>
+        <option value="sentence">Sentences</option>
+        <option value="character">Characters</option>
+        <option value="song">Songs</option>
+        <option value="event">Events</option>
+        <option value="tag">Tags</option>
+      </select>
+      <select id="search-character" name="character">
+        <option value="">Any Character</option>
+      </select>
+      <select id="search-tag" name="tag">
+        <option value="">Any Tag</option>
+      </select>
+    </div>
+  </form>
+</div>
+
+<script>
+  import FlexSearch from 'flexsearch';
+
+  interface SearchEntry {
+    id: string;
+    title: string;
+    text: string;
+    type: string;
+    characters: string[];
+    songs: string[];
+    events: string[];
+    tags: string[];
+    date?: string;
+    speaker?: string;
+  }
+
+  let searchIndex: FlexSearch.Index | null = null;
+  let allEntries: SearchEntry[] = [];
+  let initialized = false;
+
+  function getTypeLabel(type: string): string {
+    const labels: Record<string, string> = {
+      character: 'Character', song: 'Song', event: 'Event',
+      episode: 'Episode', radio: 'Radio', interview: 'Interview',
+      live: 'Live', tag: 'Tag', document: 'Document',
+      'anime-episode': 'Episode', 'official-radio': 'Radio',
+      'official-interview': 'Interview', 'magazine-interview': 'Interview',
+      'va-interview': 'Interview', 'staff-interview': 'Interview',
+      'live-report': 'Live', 'game-story': 'Game Story',
+      'official-blog': 'Blog', 'official-article': 'Article',
+      'official-event-report': 'Event Report', 'official-publication': 'Publication',
+      paragraph: 'Paragraph', sentence: 'Sentence',
+    };
+    return labels[type] || type;
+  }
+
+  function getEntryUrl(entry: SearchEntry): string {
+    const prefix = entry.id.split('-')[0];
+    const urlMap: Record<string, string> = {
+      char: '/characters/', song: '/songs/', ep: '/episodes/',
+      event: '/events/', radio: '/radio/', interview: '/interviews/',
+      live: '/lives/', tag: '/tags/', doc: '/documents/',
+      para: '/paragraph/', sent: '/sentence/',
+    };
+    const base = urlMap[prefix];
+    if (base) return base + entry.id;
+    return `/search?q=${encodeURIComponent(entry.id)}`;
+  }
+
+  async function initSearch() {
+    if (initialized) return;
+    initialized = true;
+
+    try {
+      const res = await fetch('/data/search-index.json');
+      allEntries = await res.json();
+    } catch {
+      allEntries = [];
+      return;
+    }
+
+    searchIndex = new FlexSearch.Index({
+      charset: 'latin:extra',
+      tokenize: 'forward',
+      resolution: 9,
+      cache: true,
+    });
+
+    for (let i = 0; i < allEntries.length; i++) {
+      const entry = allEntries[i];
+      searchIndex.add(i, `${entry.title} ${entry.text}`);
+    }
+
+    // Populate character filter
+    const charSelect = document.getElementById('search-character') as HTMLSelectElement;
+    const tagSelect = document.getElementById('search-tag') as HTMLSelectElement;
+    const charSet = new Set<string>();
+    const tagSet = new Set<string>();
+
+    for (const entry of allEntries) {
+      if (entry.type === 'character') charSet.add(entry.id);
+      for (const c of entry.characters) charSet.add(c);
+      for (const t of entry.tags) tagSet.add(t);
+    }
+
+    const charNames: { id: string; name: string }[] = [];
+    for (const cid of charSet) {
+      const charEntry = allEntries.find(e => e.id === cid);
+      charNames.push({ id: cid, name: charEntry?.title || cid });
+    }
+    charNames.sort((a, b) => a.name.localeCompare(b.name));
+
+    for (const { id, name } of charNames) {
+      const opt = document.createElement('option');
+      opt.value = id;
+      opt.textContent = name;
+      charSelect.appendChild(opt);
+    }
+
+    for (const tag of [...tagSet].sort()) {
+      const opt = document.createElement('option');
+      opt.value = tag;
+      opt.textContent = tag;
+      tagSelect.appendChild(opt);
+    }
+
+    // Handle URL query params on page load
+    const urlParams = new URLSearchParams(window.location.search);
+    const q = urlParams.get('q');
+    if (q) {
+      const input = document.getElementById('search-input') as HTMLInputElement;
+      if (input) input.value = q;
+      performSearch(q);
+    }
+  }
+
+  function performSearch(query: string) {
+    if (!searchIndex) return;
+
+    const typeFilter = (document.getElementById('search-type') as HTMLSelectElement)?.value || '';
+    const charFilter = (document.getElementById('search-character') as HTMLSelectElement)?.value || '';
+    const tagFilter = (document.getElementById('search-tag') as HTMLSelectElement)?.value || '';
+
+    const resultsContainer = document.getElementById('search-results');
+    if (!resultsContainer) return;
+
+    // Parse advanced query syntax: key=value
+    const advancedFilters: Record<string, string> = {};
+    const cleanQuery = query.replace(/(\w+)[>=<]=?(\S+)/g, (_match, key, val) => {
+      advancedFilters[key] = val;
+      return '';
+    }).trim();
+
+    let resultIds: number[];
+    if (cleanQuery) {
+      resultIds = searchIndex.search(cleanQuery, { limit: 100 }) as number[];
+    } else {
+      resultIds = [...Array(allEntries.length).keys()];
+    }
+
+    // Apply filters
+    let entries = resultIds.map((id) => allEntries[id]).filter(Boolean);
+
+    if (typeFilter) {
+      entries = entries.filter((e) => e.type === typeFilter);
+    }
+    if (charFilter) {
+      entries = entries.filter((e) => e.characters.includes(charFilter) || e.id === charFilter);
+    }
+    if (tagFilter) {
+      entries = entries.filter((e) => e.tags.includes(tagFilter));
+    }
+    if (advancedFilters.character) {
+      entries = entries.filter((e) => e.characters.includes(`char-${advancedFilters.character}`) || e.characters.includes(advancedFilters.character));
+    }
+    if (advancedFilters.song) {
+      entries = entries.filter((e) => e.songs.includes(`song-${advancedFilters.song}`) || e.songs.includes(advancedFilters.song));
+    }
+    if (advancedFilters.event) {
+      entries = entries.filter((e) => e.events.includes(`event-${advancedFilters.event}`) || e.events.includes(advancedFilters.event));
+    }
+    if (advancedFilters.tag) {
+      entries = entries.filter((e) => e.tags.includes(`tag-${advancedFilters.tag}`) || e.tags.includes(advancedFilters.tag));
+    }
+    if (advancedFilters.type) {
+      entries = entries.filter((e) => e.type === advancedFilters.type || e.type.includes(advancedFilters.type));
+    }
+    if (advancedFilters.speaker) {
+      entries = entries.filter((e) => e.speaker === `char-${advancedFilters.speaker}` || e.speaker === advancedFilters.speaker);
+    }
+    if (advancedFilters.date) {
+      const op = query.includes('date>') ? '>' : query.includes('date<') ? '<' : '=';
+      const dateVal = advancedFilters.date;
+      entries = entries.filter((e) => {
+        if (!e.date) return false;
+        if (op === '>') return e.date > dateVal;
+        if (op === '<') return e.date < dateVal;
+        return e.date === dateVal;
+      });
+    }
+
+    // Sort: exact matches first, then by type priority
+    entries.sort((a, b) => {
+      const typeOrder: Record<string, number> = {
+        character: 1, song: 2, event: 3, episode: 4,
+        document: 5, radio: 6, interview: 7, live: 8,
+        tag: 9, paragraph: 10, sentence: 11,
+      };
+      return (typeOrder[a.type] || 99) - (typeOrder[b.type] || 99);
+    });
+
+    // Render results
+    const count = document.getElementById('result-count');
+    if (count) count.textContent = `${entries.length} results`;
+
+    if (entries.length === 0) {
+      resultsContainer.innerHTML = '<p class="no-results">No results found.</p>';
+      return;
+    }
+
+    resultsContainer.innerHTML = entries
+      .slice(0, 50)
+      .map(
+        (entry) => `
+        <div class="search-result">
+          <a href="${getEntryUrl(entry)}" class="result-title">${escapeHtml(entry.title)}</a>
+          <span class="result-type">${getTypeLabel(entry.type)}</span>
+          <p class="result-text">${escapeHtml(truncateText(entry.text, 200))}</p>
+          ${entry.speaker ? `<span class="result-meta">Speaker: ${entry.speaker}</span>` : ''}
+          ${entry.date ? `<span class="result-meta">Date: ${entry.date}</span>` : ''}
+        </div>
+      `
+      )
+      .join('');
+  }
+
+  function escapeHtml(text: string): string {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  function truncateText(text: string, maxLen: number): string {
+    if (text.length <= maxLen) return text;
+    return text.substring(0, maxLen) + '...';
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    initSearch();
+
+    const form = document.getElementById('search-form') as HTMLFormElement;
+    const input = document.getElementById('search-input') as HTMLInputElement;
+
+    if (!form || !input) return;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const query = input.value.trim();
+      if (!query) return;
+      performSearch(query);
+    });
+
+    // Real-time search as user types
+    let debounceTimer: ReturnType<typeof setTimeout>;
+    input.addEventListener('input', () => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        const query = input.value.trim();
+        if (query.length >= 2) {
+          performSearch(query);
+        } else if (query.length === 0) {
+          const resultsContainer = document.getElementById('search-results');
+          if (resultsContainer) resultsContainer.innerHTML = '';
+        }
+      }, 300);
+    });
+
+    // Filter changes trigger re-search
+    const filters = ['search-type', 'search-character', 'search-tag'];
+    for (const filterId of filters) {
+      const el = document.getElementById(filterId);
+      if (el) {
+        el.addEventListener('change', () => {
+          const query = input.value.trim();
+          if (query) performSearch(query);
+        });
+      }
+    }
+  });
+</script>
+
+<style>
+  .search-input-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .search-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  .search-button {
+    padding: 0.75rem 1.5rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .search-button:hover {
+    opacity: 0.9;
+  }
+  .search-filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .search-filters select {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  .search-results {
+    margin-top: 1.5rem;
+  }
+  .search-result {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  .result-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+  .result-type {
+    font-size: 0.75rem;
+    background: var(--border-color);
+    padding: 0.1rem 0.5rem;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    color: var(--muted-color);
+  }
+  .result-text {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--muted-color);
+  }
+  .result-meta {
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    margin-right: 0.75rem;
+  }
+  .no-results {
+    text-align: center;
+    color: var(--muted-color);
+    padding: 2rem;
+  }
+</style>
