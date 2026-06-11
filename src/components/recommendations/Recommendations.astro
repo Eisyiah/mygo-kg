@@ -43,13 +43,14 @@ const { nodeId, limit = 5 } = Astro.props;
             const li = document.createElement('li');
             li.className = 'recommendation-entry';
             const prefix = rec.id.split('-')[0];
+            const base = window.BASE_URL || '';
             const typeRoutes: Record<string, string> = {
-              char: '/characters/', song: '/songs/', ep: '/episodes/',
-              event: '/events/', radio: '/radio/', interview: '/interviews/',
-              live: '/lives/', tag: '/tags/', doc: '/documents/',
-              para: '/paragraph/', sent: '/sentence/',
+              char: `${base}/characters/`, song: `${base}/songs/`, ep: `${base}/episodes/`,
+              event: `${base}/events/`, radio: `${base}/radio/`, interview: `${base}/interviews/`,
+              live: `${base}/lives/`, tag: `${base}/tags/`, doc: `${base}/documents/`,
+              para: `${base}/paragraph/`, sent: `${base}/sentence/`,
             };
-            const href = (typeRoutes[prefix] || '/search?q=') + rec.id;
+            const href = (typeRoutes[prefix] || `${base}/search?q=`) + rec.id;
             li.innerHTML = `
               <a href="${href}" class="recommendation-link">${rec.id}</a>
               <span class="recommendation-score">${rec.score}</span>

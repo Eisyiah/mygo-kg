@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
+const base = '/mygo-kg';
 const characters = await getCollection('characters');
 ---
 <BaseLayout title="Characters" description="All characters in the MyGO Knowledge Graph">
@@ -9,7 +10,7 @@ const characters = await getCollection('characters');
     <h1>Characters</h1>
     <div class="entity-list">
       {characters.map((char) => (
-        <a href={`/characters/${char.id}`} class="entity-card">
+        <a href={`${base}/characters/${char.id}`} class="entity-card">
           <h3>{char.data.name}</h3>
           {char.data.nameJa && <p class="name-ja">{char.data.nameJa}</p>}
           <p class="group">{char.data.group}</p>

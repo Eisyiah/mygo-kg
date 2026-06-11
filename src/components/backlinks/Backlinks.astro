@@ -40,13 +40,14 @@ const { targetId } = Astro.props;
           for (const entry of entries) {
             const li = document.createElement('li');
             li.className = 'backlink-entry';
+            const base = window.BASE_URL || '';
             const typeRoutes: Record<string, string> = {
-              character: '/characters/', song: '/songs/', event: '/events/',
-              episode: '/episodes/', tag: '/tags/', document: '/documents/',
-              paragraph: '/paragraph/', sentence: '/sentence/',
+              character: `${base}/characters/`, song: `${base}/songs/`, event: `${base}/events/`,
+              episode: `${base}/episodes/`, tag: `${base}/tags/`, document: `${base}/documents/`,
+              paragraph: `${base}/paragraph/`, sentence: `${base}/sentence/`,
             };
-            const base = typeRoutes[entry.sourceType] || '/search?q=';
-            const href = base.startsWith('/search') ? `${base}${encodeURIComponent(entry.sourceId)}` : `${base}${entry.sourceId}`;
+            const route = typeRoutes[entry.sourceType];
+            const href = route ? `${route}${entry.sourceId}` : `${base}/search?q=${encodeURIComponent(entry.sourceId)}`;
             li.innerHTML = `
               <a href="${href}" class="backlink-link">${entry.sourceTitle}</a>
               <span class="backlink-type">${entry.sourceType}</span>

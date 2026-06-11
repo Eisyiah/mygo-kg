@@ -188,21 +188,22 @@ const { height = '600px' } = Astro.props;
       const node = evt.target;
       const nodeId = node.id();
       const nodeType = node.data('type');
+      const base = window.BASE_URL || '';
 
       if (nodeType === 'character' || nodeType === 'song' || nodeType === 'event' || nodeType === 'tag') {
         const urlMap: Record<string, string> = {
-          character: '/characters/', song: '/songs/', event: '/events/',
-          episode: '/episodes/', radio: '/radio/', interview: '/interviews/',
-          live: '/lives/', tag: '/tags/', document: '/documents/',
-          paragraph: '/paragraph/', sentence: '/sentence/',
+          character: `${base}/characters/`, song: `${base}/songs/`, event: `${base}/events/`,
+          episode: `${base}/episodes/`, radio: `${base}/radio/`, interview: `${base}/interviews/`,
+          live: `${base}/lives/`, tag: `${base}/tags/`, document: `${base}/documents/`,
+          paragraph: `${base}/paragraph/`, sentence: `${base}/sentence/`,
         };
-        const base = urlMap[nodeType];
-        if (base) {
-          window.location.href = base + nodeId;
+        const url = urlMap[nodeType];
+        if (url) {
+          window.location.href = url + nodeId;
           return;
         }
       }
-      window.location.href = `/search?q=${encodeURIComponent(nodeId)}`;
+      window.location.href = `${base}/search?q=${encodeURIComponent(nodeId)}`;
     });
 
     // Initialize filters

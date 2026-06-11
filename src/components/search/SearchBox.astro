@@ -76,15 +76,16 @@ const { placeholder = 'Search the archive...' } = Astro.props;
 
   function getEntryUrl(entry: SearchEntry): string {
     const prefix = entry.id.split('-')[0];
+    const base = window.BASE_URL || '';
     const urlMap: Record<string, string> = {
-      char: '/characters/', song: '/songs/', ep: '/episodes/',
-      event: '/events/', radio: '/radio/', interview: '/interviews/',
-      live: '/lives/', tag: '/tags/', doc: '/documents/',
-      para: '/paragraph/', sent: '/sentence/',
+      char: `${base}/characters/`, song: `${base}/songs/`, ep: `${base}/episodes/`,
+      event: `${base}/events/`, radio: `${base}/radio/`, interview: `${base}/interviews/`,
+      live: `${base}/lives/`, tag: `${base}/tags/`, doc: `${base}/documents/`,
+      para: `${base}/paragraph/`, sent: `${base}/sentence/`,
     };
-    const base = urlMap[prefix];
-    if (base) return base + entry.id;
-    return `/search?q=${encodeURIComponent(entry.id)}`;
+    const route = urlMap[prefix];
+    if (route) return route + entry.id;
+    return `${base}/search?q=${encodeURIComponent(entry.id)}`;
   }
 
   async function initSearch() {

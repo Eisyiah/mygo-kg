@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const base = '/mygo-kg';
 ---
 <BaseLayout title="Home" description="BanG Dream! It's MyGO!!!!! & Ave Mujica Knowledge Graph Archive">
   <section class="hero">
@@ -13,35 +14,35 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="entry-points">
     <h2>Explore</h2>
     <div class="card-grid">
-      <a href="/characters" class="card">
+      <a href={`${base}/characters`} class="card">
         <h3>Characters</h3>
         <p>Browse all characters and their relationships</p>
       </a>
-      <a href="/songs" class="card">
+      <a href={`${base}/songs`} class="card">
         <h3>Songs</h3>
         <p>Explore songs, lyrics, and connections</p>
       </a>
-      <a href="/episodes" class="card">
+      <a href={`${base}/episodes`} class="card">
         <h3>Episodes</h3>
         <p>Navigate episode content and annotations</p>
       </a>
-      <a href="/events" class="card">
+      <a href={`${base}/events`} class="card">
         <h3>Events</h3>
         <p>Key events in the MyGO and Ave Mujica story</p>
       </a>
-      <a href="/radio" class="card">
+      <a href={`${base}/radio`} class="card">
         <h3>Radio</h3>
         <p>Radio show transcripts and highlights</p>
       </a>
-      <a href="/interviews" class="card">
+      <a href={`${base}/interviews`} class="card">
         <h3>Interviews</h3>
         <p>Official and magazine interviews</p>
       </a>
-      <a href="/lives" class="card">
+      <a href={`${base}/lives`} class="card">
         <h3>Lives</h3>
         <p>Live performance reports and setlists</p>
       </a>
-      <a href="/tags" class="card">
+      <a href={`${base}/tags`} class="card">
         <h3>Tags</h3>
         <p>Browse by themes and topics</p>
       </a>
@@ -51,15 +52,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="tools">
     <h2>Tools</h2>
     <div class="card-grid">
-      <a href="/timeline" class="card">
+      <a href={`${base}/timeline`} class="card">
         <h3>Timeline</h3>
         <p>Explore events chronologically</p>
       </a>
-      <a href="/graph" class="card">
+      <a href={`${base}/graph`} class="card">
         <h3>Knowledge Graph</h3>
         <p>Visualize the knowledge network</p>
       </a>
-      <a href="/search" class="card">
+      <a href={`${base}/search`} class="card">
         <h3>Search</h3>
         <p>Full-text search across the archive</p>
       </a>

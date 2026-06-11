@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
+const base = '/mygo-kg';
 const tags = await getCollection('tags');
 ---
 <BaseLayout title="Tags" description="Browse by tags in the MyGO Knowledge Graph">
@@ -9,7 +10,7 @@ const tags = await getCollection('tags');
     <h1>Tags</h1>
     <div class="tag-cloud">
       {tags.map((tag) => (
-        <a href={`/tags/${tag.id}`} class="tag-item" data-category={tag.data.category}>
+        <a href={`${base}/tags/${tag.id}`} class="tag-item" data-category={tag.data.category}>
           {tag.data.name}
         </a>
       ))}

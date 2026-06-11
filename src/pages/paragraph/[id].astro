@@ -3,6 +3,8 @@ import EntityLayout from '../../layouts/EntityLayout.astro';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
+const base = '/mygo-kg';
+
 export async function getStaticPaths() {
   try {
     const dataPath = resolve('public/data/search-index.json');
@@ -28,7 +30,7 @@ const { paragraph } = Astro.props;
 >
   <div class="paragraph-page">
     <p class="breadcrumb">
-      <a href="/">Home</a> / <span>Paragraph</span>
+      <a href={base}>Home</a> / <span>Paragraph</span>
     </p>
     <h1>Paragraph</h1>
     <div class="paragraph-source">Source: {paragraph.title}</div>

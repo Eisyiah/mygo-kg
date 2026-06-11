@@ -146,7 +146,8 @@ import KnowledgeGraph from '../components/graph/KnowledgeGraph.astro';
               <tbody>
                 ${sorted.map(([id, score], i) => {
                   const prefix = id.split('-')[0];
-                  const routes: Record<string, string> = { char: '/characters/', song: '/songs/', ep: '/episodes/', event: '/events/', tag: '/tags/' };
+                  const base = window.BASE_URL || '';
+                  const routes: Record<string, string> = { char: `${base}/characters/`, song: `${base}/songs/`, ep: `${base}/episodes/`, event: `${base}/events/`, tag: `${base}/tags/` };
                   const href = (routes[prefix] || '#') + id;
                   return `<tr>
                     <td>${i + 1}</td>

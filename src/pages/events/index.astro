@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
+const base = '/mygo-kg';
 const events = await getCollection('events');
 ---
 <BaseLayout title="Events" description="All events in the MyGO Knowledge Graph">
@@ -9,7 +10,7 @@ const events = await getCollection('events');
     <h1>Events</h1>
     <div class="entity-list">
       {events.map((ev) => (
-        <a href={`/events/${ev.id}`} class="entity-card">
+        <a href={`${base}/events/${ev.id}`} class="entity-card">
           <h3>{ev.data.title}</h3>
           {ev.data.date && <p class="date">{ev.data.date}</p>}
         </a>

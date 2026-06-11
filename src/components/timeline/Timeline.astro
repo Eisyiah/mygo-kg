@@ -59,7 +59,7 @@ const { dataPath = '/data/timeline.json' } = Astro.props;
             li.dataset.type = entry.type;
             li.innerHTML = `
               <span class="timeline-date">${entry.date}</span>
-              <a href="/search?q=${encodeURIComponent(entry.id)}" class="timeline-title">${entry.title}</a>
+              <a href="/mygo-kg/search?q=${encodeURIComponent(entry.id)}" class="timeline-title">${entry.title}</a>
               <span class="timeline-type">${entry.type}</span>
             `;
             list.appendChild(li);

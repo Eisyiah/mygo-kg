@@ -2,6 +2,8 @@
 import DocumentLayout from '../../layouts/DocumentLayout.astro';
 import { getCollection } from 'astro:content';
 
+const base = '/mygo-kg';
+
 export async function getStaticPaths() {
   try {
     const docs = await getCollection('documents');
@@ -23,7 +25,7 @@ const { Content } = await document.render();
   description={`Document: ${document.data.title}`}
 >
   <p class="breadcrumb">
-    <a href="/">Home</a> / <a href="/documents">Documents</a> / <span>{document.data.title}</span>
+    <a href={base}>Home</a> / <a href={`${base}/documents`}>Documents</a> / <span>{document.data.title}</span>
   </p>
 
   <h1>{document.data.title}</h1>
