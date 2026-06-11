@@ -1,0 +1,7822 @@
+[
+  {
+    "nodeId": "char-anon",
+    "related": [
+      {
+        "id": "char-rana",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "song-eishoku-mai",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-eishoku-mai"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-hekitenbansou"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-mayoi-hibi"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-mayoi-uta"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-oto-ichikai"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-uta-o-koete"
+        ]
+      },
+      {
+        "id": "char-mutsumi",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "char-mutsumi",
+    "related": [
+      {
+        "id": "char-nyamu",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-mutsumi",
+          "shared_song: song-ave-mujica"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-mutsumi",
+          "shared_song: song-futatsu-no-tsuki"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-mutsumi",
+          "shared_song: song-kuro-no-birthday"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-mutsumi",
+          "shared_song: song-masquerade-rhapsody"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "char-nyamu",
+    "related": [
+      {
+        "id": "char-mutsumi",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-nyamu",
+          "shared_song: song-ave-mujica"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-nyamu",
+          "shared_song: song-futatsu-no-tsuki"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-nyamu",
+          "shared_song: song-kuro-no-birthday"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-nyamu",
+          "shared_song: song-masquerade-rhapsody"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "char-rana",
+    "related": [
+      {
+        "id": "char-anon",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "song-eishoku-mai",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-eishoku-mai"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-hekitenbansou"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-mayoi-hibi"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-mayoi-uta"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-oto-ichikai"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-uta-o-koete"
+        ]
+      },
+      {
+        "id": "char-mutsumi",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "char-sakiko",
+    "related": [
+      {
+        "id": "char-mutsumi",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-sakiko",
+          "shared_song: song-ave-mujica"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-sakiko",
+          "shared_song: song-futatsu-no-tsuki"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-sakiko",
+          "shared_song: song-kuro-no-birthday"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-sakiko",
+          "shared_song: song-masquerade-rhapsody"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "char-soyo",
+    "related": [
+      {
+        "id": "char-taki",
+        "score": 30,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "shared_event: event-crychic-breakup",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 30,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "shared_event: event-crychic-breakup",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 8,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "song-eishoku-mai",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-eishoku-mai"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-hekitenbansou"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-mayoi-hibi"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-mayoi-uta"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-oto-ichikai"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-uta-o-koete"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 5,
+        "reasons": [
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "char-mutsumi",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "char-taki",
+    "related": [
+      {
+        "id": "char-soyo",
+        "score": 30,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "shared_event: event-crychic-breakup",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 30,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "shared_event: event-crychic-breakup",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 8,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "song-eishoku-mai",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-eishoku-mai"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-hekitenbansou"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-mayoi-hibi"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-mayoi-uta"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-oto-ichikai"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-uta-o-koete"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 5,
+        "reasons": [
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "char-mutsumi",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "char-tomori",
+    "related": [
+      {
+        "id": "char-soyo",
+        "score": 30,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "shared_event: event-crychic-breakup",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 30,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "shared_event: event-crychic-breakup",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 25,
+        "reasons": [
+          "shared_song: song-eishoku-mai, song-hekitenbansou, song-mayoi-hibi, song-mayoi-uta, song-oto-ichikai, song-uta-o-koete",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 8,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "song-eishoku-mai",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-eishoku-mai"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-hekitenbansou"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-mayoi-hibi"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-mayoi-uta"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-oto-ichikai"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-uta-o-koete"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 5,
+        "reasons": [
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "char-mutsumi",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "char-uika",
+    "related": [
+      {
+        "id": "char-mutsumi",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-uika",
+          "shared_song: song-ave-mujica"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-uika",
+          "shared_song: song-futatsu-no-tsuki"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-uika",
+          "shared_song: song-kuro-no-birthday"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-uika",
+          "shared_song: song-masquerade-rhapsody"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "char-umiri",
+    "related": [
+      {
+        "id": "char-mutsumi",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 17,
+        "reasons": [
+          "shared_song: song-ave-mujica, song-futatsu-no-tsuki, song-kuro-no-birthday, song-masquerade-rhapsody",
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-umiri",
+          "shared_song: song-ave-mujica"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-umiri",
+          "shared_song: song-futatsu-no-tsuki"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-umiri",
+          "shared_song: song-kuro-no-birthday"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-umiri",
+          "shared_song: song-masquerade-rhapsody"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 1,
+        "reasons": [
+          "same_type: character"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "song-ave-mujica",
+    "related": [
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "char-mutsumi",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-mutsumi",
+          "shared_song: song-ave-mujica"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-nyamu",
+          "shared_song: song-ave-mujica"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-sakiko",
+          "shared_song: song-ave-mujica"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-uika",
+          "shared_song: song-ave-mujica"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-umiri",
+          "shared_song: song-ave-mujica"
+        ]
+      },
+      {
+        "id": "song-eishoku-mai",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "song-eishoku-mai",
+    "related": [
+      {
+        "id": "song-hekitenbansou",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-eishoku-mai"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-eishoku-mai"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-eishoku-mai"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-eishoku-mai"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-eishoku-mai"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "song-futatsu-no-tsuki",
+    "related": [
+      {
+        "id": "song-ave-mujica",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "char-mutsumi",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-mutsumi",
+          "shared_song: song-futatsu-no-tsuki"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-nyamu",
+          "shared_song: song-futatsu-no-tsuki"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-sakiko",
+          "shared_song: song-futatsu-no-tsuki"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-uika",
+          "shared_song: song-futatsu-no-tsuki"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-umiri",
+          "shared_song: song-futatsu-no-tsuki"
+        ]
+      },
+      {
+        "id": "song-eishoku-mai",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "song-haruhikage",
+    "related": [
+      {
+        "id": "event-crychic-breakup",
+        "score": 9,
+        "reasons": [
+          "shared_song: song-haruhikage",
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 5,
+        "reasons": [
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 5,
+        "reasons": [
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 5,
+        "reasons": [
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "song-eishoku-mai",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "song-hekitenbansou",
+    "related": [
+      {
+        "id": "song-eishoku-mai",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-hekitenbansou"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-hekitenbansou"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-hekitenbansou"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-hekitenbansou"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-hekitenbansou"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "song-kuro-no-birthday",
+    "related": [
+      {
+        "id": "song-ave-mujica",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "char-mutsumi",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-mutsumi",
+          "shared_song: song-kuro-no-birthday"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-nyamu",
+          "shared_song: song-kuro-no-birthday"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-sakiko",
+          "shared_song: song-kuro-no-birthday"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-uika",
+          "shared_song: song-kuro-no-birthday"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-umiri",
+          "shared_song: song-kuro-no-birthday"
+        ]
+      },
+      {
+        "id": "song-eishoku-mai",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "song-masquerade-rhapsody",
+    "related": [
+      {
+        "id": "song-ave-mujica",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-sakiko, char-mutsumi, char-uika, char-umiri, char-nyamu",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "char-mutsumi",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-mutsumi",
+          "shared_song: song-masquerade-rhapsody"
+        ]
+      },
+      {
+        "id": "char-nyamu",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-nyamu",
+          "shared_song: song-masquerade-rhapsody"
+        ]
+      },
+      {
+        "id": "char-sakiko",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-sakiko",
+          "shared_song: song-masquerade-rhapsody"
+        ]
+      },
+      {
+        "id": "char-uika",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-uika",
+          "shared_song: song-masquerade-rhapsody"
+        ]
+      },
+      {
+        "id": "char-umiri",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-umiri",
+          "shared_song: song-masquerade-rhapsody"
+        ]
+      },
+      {
+        "id": "song-eishoku-mai",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "song-mayoi-hibi",
+    "related": [
+      {
+        "id": "song-eishoku-mai",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-mayoi-hibi"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-mayoi-hibi"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-mayoi-hibi"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-mayoi-hibi"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-mayoi-hibi"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "song-mayoi-uta",
+    "related": [
+      {
+        "id": "song-eishoku-mai",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-mayoi-uta"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-mayoi-uta"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-mayoi-uta"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-mayoi-uta"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-mayoi-uta"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "song-oto-ichikai",
+    "related": [
+      {
+        "id": "song-eishoku-mai",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-oto-ichikai"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-oto-ichikai"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-oto-ichikai"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-oto-ichikai"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-oto-ichikai"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "song-uta-o-koete",
+    "related": [
+      {
+        "id": "song-eishoku-mai",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 17,
+        "reasons": [
+          "shared_character: char-tomori, char-anon, char-rana, char-soyo, char-taki",
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "char-anon",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-anon",
+          "shared_song: song-uta-o-koete"
+        ]
+      },
+      {
+        "id": "char-rana",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-rana",
+          "shared_song: song-uta-o-koete"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_song: song-uta-o-koete"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_song: song-uta-o-koete"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 7,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_song: song-uta-o-koete"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-ave-mujica",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-futatsu-no-tsuki",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-kuro-no-birthday",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      },
+      {
+        "id": "song-masquerade-rhapsody",
+        "score": 1,
+        "reasons": [
+          "same_type: song"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep1",
+    "related": [
+      {
+        "id": "ep-ave-ep2",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep10",
+    "related": [
+      {
+        "id": "ep-ave-ep11",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep11",
+    "related": [
+      {
+        "id": "ep-ave-ep10",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep12",
+    "related": [
+      {
+        "id": "ep-ave-ep10",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep13",
+    "related": [
+      {
+        "id": "ep-ave-ep10",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep2",
+    "related": [
+      {
+        "id": "ep-ave-ep1",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep3",
+    "related": [
+      {
+        "id": "ep-ave-ep1",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep4",
+    "related": [
+      {
+        "id": "ep-ave-ep1",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep5",
+    "related": [
+      {
+        "id": "ep-ave-ep1",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep6",
+    "related": [
+      {
+        "id": "ep-ave-ep7",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep7",
+    "related": [
+      {
+        "id": "ep-ave-ep6",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep8",
+    "related": [
+      {
+        "id": "ep-ave-ep6",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-ave-ep9",
+    "related": [
+      {
+        "id": "ep-ave-ep6",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep1",
+    "related": [
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep10",
+    "related": [
+      {
+        "id": "ep-mygo-ep6",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep7",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep8",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep9",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep11",
+    "related": [
+      {
+        "id": "ep-mygo-ep12",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep12",
+    "related": [
+      {
+        "id": "ep-mygo-ep11",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep13",
+    "related": [
+      {
+        "id": "ep-mygo-ep11",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep2",
+    "related": [
+      {
+        "id": "ep-mygo-ep3",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep5",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep3",
+    "related": [
+      {
+        "id": "ep-mygo-ep2",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep5",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep4",
+    "related": [
+      {
+        "id": "ep-mygo-ep2",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep5",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep5",
+    "related": [
+      {
+        "id": "ep-mygo-ep2",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep6",
+    "related": [
+      {
+        "id": "ep-mygo-ep10",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep7",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep8",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep9",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep7",
+    "related": [
+      {
+        "id": "ep-mygo-ep10",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep6",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep8",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep9",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep8",
+    "related": [
+      {
+        "id": "ep-mygo-ep10",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep6",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep7",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep9",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "ep-mygo-ep9",
+    "related": [
+      {
+        "id": "ep-mygo-ep10",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep6",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep7",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep8",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep10",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep13",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep2",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep3",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep4",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep5",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep6",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep7",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep8",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-ave-ep9",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep1",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_type: episode"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "event-ave-mujica-debut",
+    "related": [
+      {
+        "id": "event-first-live",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-crychic-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-cultural-festival",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-mygo-formation",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "event-crychic-breakup",
+    "related": [
+      {
+        "id": "song-eishoku-mai",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "song-haruhikage",
+        "score": 9,
+        "reasons": [
+          "shared_song: song-haruhikage",
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "song-hekitenbansou",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "song-mayoi-hibi",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "song-mayoi-uta",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "song-oto-ichikai",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "song-uta-o-koete",
+        "score": 9,
+        "reasons": [
+          "shared_character: char-tomori, char-soyo, char-taki"
+        ]
+      },
+      {
+        "id": "char-soyo",
+        "score": 8,
+        "reasons": [
+          "shared_character: char-soyo",
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "char-taki",
+        "score": 8,
+        "reasons": [
+          "shared_character: char-taki",
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "char-tomori",
+        "score": 8,
+        "reasons": [
+          "shared_character: char-tomori",
+          "shared_event: event-crychic-breakup"
+        ]
+      },
+      {
+        "id": "event-ave-mujica-debut",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-crychic-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-cultural-festival",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-first-live",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-mygo-formation",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "event-crychic-reunion",
+    "related": [
+      {
+        "id": "ep-mygo-ep10",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep6",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep7",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep8",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep9",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "event-ave-mujica-debut",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-cultural-festival",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-first-live",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-mygo-formation",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "event-cultural-festival",
+    "related": [
+      {
+        "id": "event-ave-mujica-debut",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-crychic-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-first-live",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-mygo-formation",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "event-first-live",
+    "related": [
+      {
+        "id": "event-ave-mujica-debut",
+        "score": 2,
+        "reasons": [
+          "same_month",
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep11",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep12",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep13",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-crychic-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-cultural-festival",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-mygo-formation",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "event-mygo-formation",
+    "related": [
+      {
+        "id": "ep-mygo-ep2",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep3",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep4",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "ep-mygo-ep5",
+        "score": 1,
+        "reasons": [
+          "same_month"
+        ]
+      },
+      {
+        "id": "event-ave-mujica-debut",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-crychic-breakup",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-crychic-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-cultural-festival",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      },
+      {
+        "id": "event-first-live",
+        "score": 1,
+        "reasons": [
+          "same_type: event"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-band-history",
+    "related": [
+      {
+        "id": "tag-betrayal",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-character-development",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-conflict",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-emotion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-foreshadowing",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-friendship",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-growth",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-music",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-performance",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-regret",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-betrayal",
+    "related": [
+      {
+        "id": "tag-band-history",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-character-development",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-conflict",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-emotion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-foreshadowing",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-friendship",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-growth",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-music",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-performance",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-regret",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-character-development",
+    "related": [
+      {
+        "id": "tag-band-history",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-betrayal",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-conflict",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-emotion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-foreshadowing",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-friendship",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-growth",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-music",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-performance",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-regret",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-conflict",
+    "related": [
+      {
+        "id": "tag-band-history",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-betrayal",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-character-development",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-emotion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-foreshadowing",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-friendship",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-growth",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-music",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-performance",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-regret",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-emotion",
+    "related": [
+      {
+        "id": "tag-band-history",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-betrayal",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-character-development",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-conflict",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-foreshadowing",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-friendship",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-growth",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-music",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-performance",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-regret",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-foreshadowing",
+    "related": [
+      {
+        "id": "tag-band-history",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-betrayal",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-character-development",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-conflict",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-emotion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-friendship",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-growth",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-music",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-performance",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-regret",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-friendship",
+    "related": [
+      {
+        "id": "tag-band-history",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-betrayal",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-character-development",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-conflict",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-emotion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-foreshadowing",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-growth",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-music",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-performance",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-regret",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-growth",
+    "related": [
+      {
+        "id": "tag-band-history",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-betrayal",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-character-development",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-conflict",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-emotion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-foreshadowing",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-friendship",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-music",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-performance",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-regret",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-music",
+    "related": [
+      {
+        "id": "tag-band-history",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-betrayal",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-character-development",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-conflict",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-emotion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-foreshadowing",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-friendship",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-growth",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-performance",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-regret",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-performance",
+    "related": [
+      {
+        "id": "tag-band-history",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-betrayal",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-character-development",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-conflict",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-emotion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-foreshadowing",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-friendship",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-growth",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-music",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-regret",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-regret",
+    "related": [
+      {
+        "id": "tag-band-history",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-betrayal",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-character-development",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-conflict",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-emotion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-foreshadowing",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-friendship",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-growth",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-music",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-performance",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-reunion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "tag-reunion",
+    "related": [
+      {
+        "id": "tag-band-history",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-betrayal",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-character-development",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-conflict",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-emotion",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-foreshadowing",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-friendship",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-growth",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-music",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-performance",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      },
+      {
+        "id": "tag-regret",
+        "score": 1,
+        "reasons": [
+          "same_type: tag"
+        ]
+      }
+    ]
+  }
+]

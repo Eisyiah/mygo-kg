@@ -1,0 +1,730 @@
+[
+  {
+    "id": "char-anon",
+    "title": "千早 愛音",
+    "text": "千早 愛音",
+    "type": "character",
+    "characters": [
+      "char-anon"
+    ],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "char-mutsumi",
+    "title": "若葉 睦",
+    "text": "若葉 睦",
+    "type": "character",
+    "characters": [
+      "char-mutsumi"
+    ],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "char-nyamu",
+    "title": "祐天寺 にゃむ",
+    "text": "祐天寺 にゃむ",
+    "type": "character",
+    "characters": [
+      "char-nyamu"
+    ],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "char-rana",
+    "title": "要 楽奈",
+    "text": "要 楽奈",
+    "type": "character",
+    "characters": [
+      "char-rana"
+    ],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "char-sakiko",
+    "title": "豊川 祥子",
+    "text": "豊川 祥子",
+    "type": "character",
+    "characters": [
+      "char-sakiko"
+    ],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "char-soyo",
+    "title": "長崎 そよ",
+    "text": "長崎 そよ",
+    "type": "character",
+    "characters": [
+      "char-soyo"
+    ],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "char-taki",
+    "title": "椎名 立希",
+    "text": "椎名 立希",
+    "type": "character",
+    "characters": [
+      "char-taki"
+    ],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "char-tomori",
+    "title": "高松 燈",
+    "text": "高松 燈",
+    "type": "character",
+    "characters": [
+      "char-tomori"
+    ],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "char-uika",
+    "title": "三角 初華",
+    "text": "三角 初華",
+    "type": "character",
+    "characters": [
+      "char-uika"
+    ],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "char-umiri",
+    "title": "八幡 海鈴",
+    "text": "八幡 海鈴",
+    "type": "character",
+    "characters": [
+      "char-umiri"
+    ],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "song-ave-mujica",
+    "title": "Ave Mujica",
+    "text": "Ave Mujica",
+    "type": "song",
+    "characters": [],
+    "songs": [
+      "song-ave-mujica"
+    ],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "song-eishoku-mai",
+    "title": "影色舞",
+    "text": "影色舞",
+    "type": "song",
+    "characters": [],
+    "songs": [
+      "song-eishoku-mai"
+    ],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "song-futatsu-no-tsuki",
+    "title": "ふたつの月",
+    "text": "ふたつの月",
+    "type": "song",
+    "characters": [],
+    "songs": [
+      "song-futatsu-no-tsuki"
+    ],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "song-haruhikage",
+    "title": "春日影",
+    "text": "春日影",
+    "type": "song",
+    "characters": [],
+    "songs": [
+      "song-haruhikage"
+    ],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "song-hekitenbansou",
+    "title": "碧天伴走",
+    "text": "碧天伴走",
+    "type": "song",
+    "characters": [],
+    "songs": [
+      "song-hekitenbansou"
+    ],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "song-kuro-no-birthday",
+    "title": "黒のバースデイ",
+    "text": "黒のバースデイ",
+    "type": "song",
+    "characters": [],
+    "songs": [
+      "song-kuro-no-birthday"
+    ],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "song-masquerade-rhapsody",
+    "title": "Mas?uerade Rhapsody Re?uest",
+    "text": "Mas?uerade Rhapsody Re?uest",
+    "type": "song",
+    "characters": [],
+    "songs": [
+      "song-masquerade-rhapsody"
+    ],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "song-mayoi-hibi",
+    "title": "迷路日々",
+    "text": "迷路日々",
+    "type": "song",
+    "characters": [],
+    "songs": [
+      "song-mayoi-hibi"
+    ],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "song-mayoi-uta",
+    "title": "迷星叫",
+    "text": "迷星叫",
+    "type": "song",
+    "characters": [],
+    "songs": [
+      "song-mayoi-uta"
+    ],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "song-oto-ichikai",
+    "title": "音一会",
+    "text": "音一会",
+    "type": "song",
+    "characters": [],
+    "songs": [
+      "song-oto-ichikai"
+    ],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "song-uta-o-koete",
+    "title": "詩超絆",
+    "text": "詩超絆",
+    "type": "song",
+    "characters": [],
+    "songs": [
+      "song-uta-o-koete"
+    ],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep1",
+    "title": "Ave Mujica Ep 1",
+    "text": "Ave Mujica Ep 1",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep10",
+    "title": "Ave Mujica Ep 10",
+    "text": "Ave Mujica Ep 10",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep11",
+    "title": "Ave Mujica Ep 11",
+    "text": "Ave Mujica Ep 11",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep12",
+    "title": "Ave Mujica Ep 12",
+    "text": "Ave Mujica Ep 12",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep13",
+    "title": "Ave Mujica Ep 13",
+    "text": "Ave Mujica Ep 13",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep2",
+    "title": "Ave Mujica Ep 2",
+    "text": "Ave Mujica Ep 2",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep3",
+    "title": "Ave Mujica Ep 3",
+    "text": "Ave Mujica Ep 3",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep4",
+    "title": "Ave Mujica Ep 4",
+    "text": "Ave Mujica Ep 4",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep5",
+    "title": "Ave Mujica Ep 5",
+    "text": "Ave Mujica Ep 5",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep6",
+    "title": "Ave Mujica Ep 6",
+    "text": "Ave Mujica Ep 6",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep7",
+    "title": "Ave Mujica Ep 7",
+    "text": "Ave Mujica Ep 7",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep8",
+    "title": "Ave Mujica Ep 8",
+    "text": "Ave Mujica Ep 8",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-ave-ep9",
+    "title": "Ave Mujica Ep 9",
+    "text": "Ave Mujica Ep 9",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep1",
+    "title": "羽丘女子学園",
+    "text": "羽丘女子学園",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep10",
+    "title": "ずっと迷子",
+    "text": "ずっと迷子",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep11",
+    "title": "私のせい",
+    "text": "私のせい",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep12",
+    "title": "迷子",
+    "text": "迷子",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep13",
+    "title": "唯一無二",
+    "text": "唯一無二",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep2",
+    "title": "もう誘わない",
+    "text": "もう誘わない",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep3",
+    "title": "カラオケ",
+    "text": "カラオケ",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep4",
+    "title": "一生だよ！？",
+    "text": "一生だよ！？",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep5",
+    "title": "逃避行",
+    "text": "逃避行",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep6",
+    "title": "離れていても",
+    "text": "離れていても",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep7",
+    "title": "今日が最後",
+    "text": "今日が最後",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep8",
+    "title": "違う",
+    "text": "違う",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "ep-mygo-ep9",
+    "title": "解散",
+    "text": "解散",
+    "type": "episode",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": []
+  },
+  {
+    "id": "event-ave-mujica-debut",
+    "title": "Ave Mujica初登場",
+    "text": "Ave Mujica初登場",
+    "type": "event",
+    "characters": [],
+    "songs": [],
+    "events": [
+      "event-ave-mujica-debut"
+    ],
+    "tags": []
+  },
+  {
+    "id": "event-crychic-breakup",
+    "title": "CRYCHIC解散",
+    "text": "CRYCHIC解散",
+    "type": "event",
+    "characters": [],
+    "songs": [],
+    "events": [
+      "event-crychic-breakup"
+    ],
+    "tags": []
+  },
+  {
+    "id": "event-crychic-reunion",
+    "title": "CRYCHIC再会",
+    "text": "CRYCHIC再会",
+    "type": "event",
+    "characters": [],
+    "songs": [],
+    "events": [
+      "event-crychic-reunion"
+    ],
+    "tags": []
+  },
+  {
+    "id": "event-cultural-festival",
+    "title": "文化祭演出",
+    "text": "文化祭演出",
+    "type": "event",
+    "characters": [],
+    "songs": [],
+    "events": [
+      "event-cultural-festival"
+    ],
+    "tags": []
+  },
+  {
+    "id": "event-first-live",
+    "title": "MyGO!!!!!初Live",
+    "text": "MyGO!!!!!初Live",
+    "type": "event",
+    "characters": [],
+    "songs": [],
+    "events": [
+      "event-first-live"
+    ],
+    "tags": []
+  },
+  {
+    "id": "event-mygo-formation",
+    "title": "MyGO!!!!!結成",
+    "text": "MyGO!!!!!結成",
+    "type": "event",
+    "characters": [],
+    "songs": [],
+    "events": [
+      "event-mygo-formation"
+    ],
+    "tags": []
+  },
+  {
+    "id": "tag-band-history",
+    "title": "band-history",
+    "text": "band-history",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-band-history"
+    ]
+  },
+  {
+    "id": "tag-betrayal",
+    "title": "betrayal",
+    "text": "betrayal",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-betrayal"
+    ]
+  },
+  {
+    "id": "tag-character-development",
+    "title": "character-development",
+    "text": "character-development",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-character-development"
+    ]
+  },
+  {
+    "id": "tag-conflict",
+    "title": "conflict",
+    "text": "conflict",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-conflict"
+    ]
+  },
+  {
+    "id": "tag-emotion",
+    "title": "emotion",
+    "text": "emotion",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-emotion"
+    ]
+  },
+  {
+    "id": "tag-foreshadowing",
+    "title": "foreshadowing",
+    "text": "foreshadowing",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-foreshadowing"
+    ]
+  },
+  {
+    "id": "tag-friendship",
+    "title": "friendship",
+    "text": "friendship",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-friendship"
+    ]
+  },
+  {
+    "id": "tag-growth",
+    "title": "growth",
+    "text": "growth",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-growth"
+    ]
+  },
+  {
+    "id": "tag-music",
+    "title": "music",
+    "text": "music",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-music"
+    ]
+  },
+  {
+    "id": "tag-performance",
+    "title": "performance",
+    "text": "performance",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-performance"
+    ]
+  },
+  {
+    "id": "tag-regret",
+    "title": "regret",
+    "text": "regret",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-regret"
+    ]
+  },
+  {
+    "id": "tag-reunion",
+    "title": "reunion",
+    "text": "reunion",
+    "type": "tag",
+    "characters": [],
+    "songs": [],
+    "events": [],
+    "tags": [
+      "tag-reunion"
+    ]
+  }
+]

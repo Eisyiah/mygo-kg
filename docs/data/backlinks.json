@@ -1,0 +1,730 @@
+{
+  "char-anon": [
+    {
+      "sourceId": "song-eishoku-mai",
+      "sourceType": "song",
+      "sourceTitle": "影色舞",
+      "context": "影色舞"
+    },
+    {
+      "sourceId": "song-hekitenbansou",
+      "sourceType": "song",
+      "sourceTitle": "碧天伴走",
+      "context": "碧天伴走"
+    },
+    {
+      "sourceId": "song-mayoi-hibi",
+      "sourceType": "song",
+      "sourceTitle": "迷路日々",
+      "context": "迷路日々"
+    },
+    {
+      "sourceId": "song-mayoi-uta",
+      "sourceType": "song",
+      "sourceTitle": "迷星叫",
+      "context": "迷星叫"
+    },
+    {
+      "sourceId": "song-oto-ichikai",
+      "sourceType": "song",
+      "sourceTitle": "音一会",
+      "context": "音一会"
+    },
+    {
+      "sourceId": "song-uta-o-koete",
+      "sourceType": "song",
+      "sourceTitle": "詩超絆",
+      "context": "詩超絆"
+    }
+  ],
+  "char-mutsumi": [
+    {
+      "sourceId": "song-ave-mujica",
+      "sourceType": "song",
+      "sourceTitle": "Ave Mujica",
+      "context": "Ave Mujica"
+    },
+    {
+      "sourceId": "song-futatsu-no-tsuki",
+      "sourceType": "song",
+      "sourceTitle": "ふたつの月",
+      "context": "ふたつの月"
+    },
+    {
+      "sourceId": "song-kuro-no-birthday",
+      "sourceType": "song",
+      "sourceTitle": "黒のバースデイ",
+      "context": "黒のバースデイ"
+    },
+    {
+      "sourceId": "song-masquerade-rhapsody",
+      "sourceType": "song",
+      "sourceTitle": "Mas?uerade Rhapsody Re?uest",
+      "context": "Mas?uerade Rhapsody Re?uest"
+    }
+  ],
+  "char-nyamu": [
+    {
+      "sourceId": "song-ave-mujica",
+      "sourceType": "song",
+      "sourceTitle": "Ave Mujica",
+      "context": "Ave Mujica"
+    },
+    {
+      "sourceId": "song-futatsu-no-tsuki",
+      "sourceType": "song",
+      "sourceTitle": "ふたつの月",
+      "context": "ふたつの月"
+    },
+    {
+      "sourceId": "song-kuro-no-birthday",
+      "sourceType": "song",
+      "sourceTitle": "黒のバースデイ",
+      "context": "黒のバースデイ"
+    },
+    {
+      "sourceId": "song-masquerade-rhapsody",
+      "sourceType": "song",
+      "sourceTitle": "Mas?uerade Rhapsody Re?uest",
+      "context": "Mas?uerade Rhapsody Re?uest"
+    }
+  ],
+  "char-rana": [
+    {
+      "sourceId": "song-eishoku-mai",
+      "sourceType": "song",
+      "sourceTitle": "影色舞",
+      "context": "影色舞"
+    },
+    {
+      "sourceId": "song-hekitenbansou",
+      "sourceType": "song",
+      "sourceTitle": "碧天伴走",
+      "context": "碧天伴走"
+    },
+    {
+      "sourceId": "song-mayoi-hibi",
+      "sourceType": "song",
+      "sourceTitle": "迷路日々",
+      "context": "迷路日々"
+    },
+    {
+      "sourceId": "song-mayoi-uta",
+      "sourceType": "song",
+      "sourceTitle": "迷星叫",
+      "context": "迷星叫"
+    },
+    {
+      "sourceId": "song-oto-ichikai",
+      "sourceType": "song",
+      "sourceTitle": "音一会",
+      "context": "音一会"
+    },
+    {
+      "sourceId": "song-uta-o-koete",
+      "sourceType": "song",
+      "sourceTitle": "詩超絆",
+      "context": "詩超絆"
+    }
+  ],
+  "char-sakiko": [
+    {
+      "sourceId": "song-ave-mujica",
+      "sourceType": "song",
+      "sourceTitle": "Ave Mujica",
+      "context": "Ave Mujica"
+    },
+    {
+      "sourceId": "song-futatsu-no-tsuki",
+      "sourceType": "song",
+      "sourceTitle": "ふたつの月",
+      "context": "ふたつの月"
+    },
+    {
+      "sourceId": "song-kuro-no-birthday",
+      "sourceType": "song",
+      "sourceTitle": "黒のバースデイ",
+      "context": "黒のバースデイ"
+    },
+    {
+      "sourceId": "song-masquerade-rhapsody",
+      "sourceType": "song",
+      "sourceTitle": "Mas?uerade Rhapsody Re?uest",
+      "context": "Mas?uerade Rhapsody Re?uest"
+    }
+  ],
+  "char-soyo": [
+    {
+      "sourceId": "song-eishoku-mai",
+      "sourceType": "song",
+      "sourceTitle": "影色舞",
+      "context": "影色舞"
+    },
+    {
+      "sourceId": "song-hekitenbansou",
+      "sourceType": "song",
+      "sourceTitle": "碧天伴走",
+      "context": "碧天伴走"
+    },
+    {
+      "sourceId": "song-mayoi-hibi",
+      "sourceType": "song",
+      "sourceTitle": "迷路日々",
+      "context": "迷路日々"
+    },
+    {
+      "sourceId": "song-mayoi-uta",
+      "sourceType": "song",
+      "sourceTitle": "迷星叫",
+      "context": "迷星叫"
+    },
+    {
+      "sourceId": "song-oto-ichikai",
+      "sourceType": "song",
+      "sourceTitle": "音一会",
+      "context": "音一会"
+    },
+    {
+      "sourceId": "song-uta-o-koete",
+      "sourceType": "song",
+      "sourceTitle": "詩超絆",
+      "context": "詩超絆"
+    },
+    {
+      "sourceId": "event-crychic-breakup",
+      "sourceType": "event",
+      "sourceTitle": "CRYCHIC解散",
+      "context": "CRYCHIC解散"
+    }
+  ],
+  "char-taki": [
+    {
+      "sourceId": "song-eishoku-mai",
+      "sourceType": "song",
+      "sourceTitle": "影色舞",
+      "context": "影色舞"
+    },
+    {
+      "sourceId": "song-hekitenbansou",
+      "sourceType": "song",
+      "sourceTitle": "碧天伴走",
+      "context": "碧天伴走"
+    },
+    {
+      "sourceId": "song-mayoi-hibi",
+      "sourceType": "song",
+      "sourceTitle": "迷路日々",
+      "context": "迷路日々"
+    },
+    {
+      "sourceId": "song-mayoi-uta",
+      "sourceType": "song",
+      "sourceTitle": "迷星叫",
+      "context": "迷星叫"
+    },
+    {
+      "sourceId": "song-oto-ichikai",
+      "sourceType": "song",
+      "sourceTitle": "音一会",
+      "context": "音一会"
+    },
+    {
+      "sourceId": "song-uta-o-koete",
+      "sourceType": "song",
+      "sourceTitle": "詩超絆",
+      "context": "詩超絆"
+    },
+    {
+      "sourceId": "event-crychic-breakup",
+      "sourceType": "event",
+      "sourceTitle": "CRYCHIC解散",
+      "context": "CRYCHIC解散"
+    }
+  ],
+  "char-tomori": [
+    {
+      "sourceId": "song-eishoku-mai",
+      "sourceType": "song",
+      "sourceTitle": "影色舞",
+      "context": "影色舞"
+    },
+    {
+      "sourceId": "song-hekitenbansou",
+      "sourceType": "song",
+      "sourceTitle": "碧天伴走",
+      "context": "碧天伴走"
+    },
+    {
+      "sourceId": "song-mayoi-hibi",
+      "sourceType": "song",
+      "sourceTitle": "迷路日々",
+      "context": "迷路日々"
+    },
+    {
+      "sourceId": "song-mayoi-uta",
+      "sourceType": "song",
+      "sourceTitle": "迷星叫",
+      "context": "迷星叫"
+    },
+    {
+      "sourceId": "song-oto-ichikai",
+      "sourceType": "song",
+      "sourceTitle": "音一会",
+      "context": "音一会"
+    },
+    {
+      "sourceId": "song-uta-o-koete",
+      "sourceType": "song",
+      "sourceTitle": "詩超絆",
+      "context": "詩超絆"
+    },
+    {
+      "sourceId": "event-crychic-breakup",
+      "sourceType": "event",
+      "sourceTitle": "CRYCHIC解散",
+      "context": "CRYCHIC解散"
+    }
+  ],
+  "char-uika": [
+    {
+      "sourceId": "song-ave-mujica",
+      "sourceType": "song",
+      "sourceTitle": "Ave Mujica",
+      "context": "Ave Mujica"
+    },
+    {
+      "sourceId": "song-futatsu-no-tsuki",
+      "sourceType": "song",
+      "sourceTitle": "ふたつの月",
+      "context": "ふたつの月"
+    },
+    {
+      "sourceId": "song-kuro-no-birthday",
+      "sourceType": "song",
+      "sourceTitle": "黒のバースデイ",
+      "context": "黒のバースデイ"
+    },
+    {
+      "sourceId": "song-masquerade-rhapsody",
+      "sourceType": "song",
+      "sourceTitle": "Mas?uerade Rhapsody Re?uest",
+      "context": "Mas?uerade Rhapsody Re?uest"
+    }
+  ],
+  "char-umiri": [
+    {
+      "sourceId": "song-ave-mujica",
+      "sourceType": "song",
+      "sourceTitle": "Ave Mujica",
+      "context": "Ave Mujica"
+    },
+    {
+      "sourceId": "song-futatsu-no-tsuki",
+      "sourceType": "song",
+      "sourceTitle": "ふたつの月",
+      "context": "ふたつの月"
+    },
+    {
+      "sourceId": "song-kuro-no-birthday",
+      "sourceType": "song",
+      "sourceTitle": "黒のバースデイ",
+      "context": "黒のバースデイ"
+    },
+    {
+      "sourceId": "song-masquerade-rhapsody",
+      "sourceType": "song",
+      "sourceTitle": "Mas?uerade Rhapsody Re?uest",
+      "context": "Mas?uerade Rhapsody Re?uest"
+    }
+  ],
+  "song-ave-mujica": [
+    {
+      "sourceId": "char-sakiko",
+      "sourceType": "character",
+      "sourceTitle": "豊川 祥子",
+      "context": "豊川 祥子"
+    },
+    {
+      "sourceId": "char-mutsumi",
+      "sourceType": "character",
+      "sourceTitle": "若葉 睦",
+      "context": "若葉 睦"
+    },
+    {
+      "sourceId": "char-uika",
+      "sourceType": "character",
+      "sourceTitle": "三角 初華",
+      "context": "三角 初華"
+    },
+    {
+      "sourceId": "char-umiri",
+      "sourceType": "character",
+      "sourceTitle": "八幡 海鈴",
+      "context": "八幡 海鈴"
+    },
+    {
+      "sourceId": "char-nyamu",
+      "sourceType": "character",
+      "sourceTitle": "祐天寺 にゃむ",
+      "context": "祐天寺 にゃむ"
+    }
+  ],
+  "song-eishoku-mai": [
+    {
+      "sourceId": "char-tomori",
+      "sourceType": "character",
+      "sourceTitle": "高松 燈",
+      "context": "高松 燈"
+    },
+    {
+      "sourceId": "char-anon",
+      "sourceType": "character",
+      "sourceTitle": "千早 愛音",
+      "context": "千早 愛音"
+    },
+    {
+      "sourceId": "char-rana",
+      "sourceType": "character",
+      "sourceTitle": "要 楽奈",
+      "context": "要 楽奈"
+    },
+    {
+      "sourceId": "char-soyo",
+      "sourceType": "character",
+      "sourceTitle": "長崎 そよ",
+      "context": "長崎 そよ"
+    },
+    {
+      "sourceId": "char-taki",
+      "sourceType": "character",
+      "sourceTitle": "椎名 立希",
+      "context": "椎名 立希"
+    }
+  ],
+  "song-futatsu-no-tsuki": [
+    {
+      "sourceId": "char-sakiko",
+      "sourceType": "character",
+      "sourceTitle": "豊川 祥子",
+      "context": "豊川 祥子"
+    },
+    {
+      "sourceId": "char-mutsumi",
+      "sourceType": "character",
+      "sourceTitle": "若葉 睦",
+      "context": "若葉 睦"
+    },
+    {
+      "sourceId": "char-uika",
+      "sourceType": "character",
+      "sourceTitle": "三角 初華",
+      "context": "三角 初華"
+    },
+    {
+      "sourceId": "char-umiri",
+      "sourceType": "character",
+      "sourceTitle": "八幡 海鈴",
+      "context": "八幡 海鈴"
+    },
+    {
+      "sourceId": "char-nyamu",
+      "sourceType": "character",
+      "sourceTitle": "祐天寺 にゃむ",
+      "context": "祐天寺 にゃむ"
+    }
+  ],
+  "song-haruhikage": [],
+  "song-hekitenbansou": [
+    {
+      "sourceId": "char-tomori",
+      "sourceType": "character",
+      "sourceTitle": "高松 燈",
+      "context": "高松 燈"
+    },
+    {
+      "sourceId": "char-anon",
+      "sourceType": "character",
+      "sourceTitle": "千早 愛音",
+      "context": "千早 愛音"
+    },
+    {
+      "sourceId": "char-rana",
+      "sourceType": "character",
+      "sourceTitle": "要 楽奈",
+      "context": "要 楽奈"
+    },
+    {
+      "sourceId": "char-soyo",
+      "sourceType": "character",
+      "sourceTitle": "長崎 そよ",
+      "context": "長崎 そよ"
+    },
+    {
+      "sourceId": "char-taki",
+      "sourceType": "character",
+      "sourceTitle": "椎名 立希",
+      "context": "椎名 立希"
+    }
+  ],
+  "song-kuro-no-birthday": [
+    {
+      "sourceId": "char-sakiko",
+      "sourceType": "character",
+      "sourceTitle": "豊川 祥子",
+      "context": "豊川 祥子"
+    },
+    {
+      "sourceId": "char-mutsumi",
+      "sourceType": "character",
+      "sourceTitle": "若葉 睦",
+      "context": "若葉 睦"
+    },
+    {
+      "sourceId": "char-uika",
+      "sourceType": "character",
+      "sourceTitle": "三角 初華",
+      "context": "三角 初華"
+    },
+    {
+      "sourceId": "char-umiri",
+      "sourceType": "character",
+      "sourceTitle": "八幡 海鈴",
+      "context": "八幡 海鈴"
+    },
+    {
+      "sourceId": "char-nyamu",
+      "sourceType": "character",
+      "sourceTitle": "祐天寺 にゃむ",
+      "context": "祐天寺 にゃむ"
+    }
+  ],
+  "song-masquerade-rhapsody": [
+    {
+      "sourceId": "char-sakiko",
+      "sourceType": "character",
+      "sourceTitle": "豊川 祥子",
+      "context": "豊川 祥子"
+    },
+    {
+      "sourceId": "char-mutsumi",
+      "sourceType": "character",
+      "sourceTitle": "若葉 睦",
+      "context": "若葉 睦"
+    },
+    {
+      "sourceId": "char-uika",
+      "sourceType": "character",
+      "sourceTitle": "三角 初華",
+      "context": "三角 初華"
+    },
+    {
+      "sourceId": "char-umiri",
+      "sourceType": "character",
+      "sourceTitle": "八幡 海鈴",
+      "context": "八幡 海鈴"
+    },
+    {
+      "sourceId": "char-nyamu",
+      "sourceType": "character",
+      "sourceTitle": "祐天寺 にゃむ",
+      "context": "祐天寺 にゃむ"
+    }
+  ],
+  "song-mayoi-hibi": [
+    {
+      "sourceId": "char-tomori",
+      "sourceType": "character",
+      "sourceTitle": "高松 燈",
+      "context": "高松 燈"
+    },
+    {
+      "sourceId": "char-anon",
+      "sourceType": "character",
+      "sourceTitle": "千早 愛音",
+      "context": "千早 愛音"
+    },
+    {
+      "sourceId": "char-rana",
+      "sourceType": "character",
+      "sourceTitle": "要 楽奈",
+      "context": "要 楽奈"
+    },
+    {
+      "sourceId": "char-soyo",
+      "sourceType": "character",
+      "sourceTitle": "長崎 そよ",
+      "context": "長崎 そよ"
+    },
+    {
+      "sourceId": "char-taki",
+      "sourceType": "character",
+      "sourceTitle": "椎名 立希",
+      "context": "椎名 立希"
+    }
+  ],
+  "song-mayoi-uta": [
+    {
+      "sourceId": "char-tomori",
+      "sourceType": "character",
+      "sourceTitle": "高松 燈",
+      "context": "高松 燈"
+    },
+    {
+      "sourceId": "char-anon",
+      "sourceType": "character",
+      "sourceTitle": "千早 愛音",
+      "context": "千早 愛音"
+    },
+    {
+      "sourceId": "char-rana",
+      "sourceType": "character",
+      "sourceTitle": "要 楽奈",
+      "context": "要 楽奈"
+    },
+    {
+      "sourceId": "char-soyo",
+      "sourceType": "character",
+      "sourceTitle": "長崎 そよ",
+      "context": "長崎 そよ"
+    },
+    {
+      "sourceId": "char-taki",
+      "sourceType": "character",
+      "sourceTitle": "椎名 立希",
+      "context": "椎名 立希"
+    }
+  ],
+  "song-oto-ichikai": [
+    {
+      "sourceId": "char-tomori",
+      "sourceType": "character",
+      "sourceTitle": "高松 燈",
+      "context": "高松 燈"
+    },
+    {
+      "sourceId": "char-anon",
+      "sourceType": "character",
+      "sourceTitle": "千早 愛音",
+      "context": "千早 愛音"
+    },
+    {
+      "sourceId": "char-rana",
+      "sourceType": "character",
+      "sourceTitle": "要 楽奈",
+      "context": "要 楽奈"
+    },
+    {
+      "sourceId": "char-soyo",
+      "sourceType": "character",
+      "sourceTitle": "長崎 そよ",
+      "context": "長崎 そよ"
+    },
+    {
+      "sourceId": "char-taki",
+      "sourceType": "character",
+      "sourceTitle": "椎名 立希",
+      "context": "椎名 立希"
+    }
+  ],
+  "song-uta-o-koete": [
+    {
+      "sourceId": "char-tomori",
+      "sourceType": "character",
+      "sourceTitle": "高松 燈",
+      "context": "高松 燈"
+    },
+    {
+      "sourceId": "char-anon",
+      "sourceType": "character",
+      "sourceTitle": "千早 愛音",
+      "context": "千早 愛音"
+    },
+    {
+      "sourceId": "char-rana",
+      "sourceType": "character",
+      "sourceTitle": "要 楽奈",
+      "context": "要 楽奈"
+    },
+    {
+      "sourceId": "char-soyo",
+      "sourceType": "character",
+      "sourceTitle": "長崎 そよ",
+      "context": "長崎 そよ"
+    },
+    {
+      "sourceId": "char-taki",
+      "sourceType": "character",
+      "sourceTitle": "椎名 立希",
+      "context": "椎名 立希"
+    }
+  ],
+  "ep-ave-ep1": [],
+  "ep-ave-ep10": [],
+  "ep-ave-ep11": [],
+  "ep-ave-ep12": [],
+  "ep-ave-ep13": [],
+  "ep-ave-ep2": [],
+  "ep-ave-ep3": [],
+  "ep-ave-ep4": [],
+  "ep-ave-ep5": [],
+  "ep-ave-ep6": [],
+  "ep-ave-ep7": [],
+  "ep-ave-ep8": [],
+  "ep-ave-ep9": [],
+  "ep-mygo-ep1": [],
+  "ep-mygo-ep10": [],
+  "ep-mygo-ep11": [],
+  "ep-mygo-ep12": [],
+  "ep-mygo-ep13": [],
+  "ep-mygo-ep2": [],
+  "ep-mygo-ep3": [],
+  "ep-mygo-ep4": [],
+  "ep-mygo-ep5": [],
+  "ep-mygo-ep6": [],
+  "ep-mygo-ep7": [],
+  "ep-mygo-ep8": [],
+  "ep-mygo-ep9": [],
+  "event-ave-mujica-debut": [],
+  "event-crychic-breakup": [
+    {
+      "sourceId": "char-tomori",
+      "sourceType": "character",
+      "sourceTitle": "高松 燈",
+      "context": "高松 燈"
+    },
+    {
+      "sourceId": "char-soyo",
+      "sourceType": "character",
+      "sourceTitle": "長崎 そよ",
+      "context": "長崎 そよ"
+    },
+    {
+      "sourceId": "char-taki",
+      "sourceType": "character",
+      "sourceTitle": "椎名 立希",
+      "context": "椎名 立希"
+    },
+    {
+      "sourceId": "song-haruhikage",
+      "sourceType": "song",
+      "sourceTitle": "春日影",
+      "context": "春日影"
+    }
+  ],
+  "event-crychic-reunion": [],
+  "event-cultural-festival": [],
+  "event-first-live": [],
+  "event-mygo-formation": [],
+  "tag-band-history": [],
+  "tag-betrayal": [],
+  "tag-character-development": [],
+  "tag-conflict": [],
+  "tag-emotion": [],
+  "tag-foreshadowing": [],
+  "tag-friendship": [],
+  "tag-growth": [],
+  "tag-music": [],
+  "tag-performance": [],
+  "tag-regret": [],
+  "tag-reunion": []
+}

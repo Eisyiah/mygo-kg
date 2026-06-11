@@ -6,6 +6,7 @@ export default defineConfig({
   site: 'https://eisyiah.github.io',
   base: '/mygo-kg',
   output: 'static',
+  outDir: './docs',
   markdown: {
     shikiConfig: {
       theme: 'github-dark',

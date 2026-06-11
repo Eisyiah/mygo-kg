@@ -1,0 +1,450 @@
+[
+  {
+    "year": 2023,
+    "months": [
+      {
+        "year": 2023,
+        "month": 4,
+        "entries": [
+          {
+            "id": "event-crychic-breakup",
+            "date": "2023-04-01",
+            "title": "CRYCHIC解散",
+            "type": "event",
+            "characters": [
+              "char-tomori",
+              "char-soyo",
+              "char-taki"
+            ]
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "month": 6,
+        "entries": [
+          {
+            "id": "ep-mygo-ep1",
+            "date": "2023-06-29",
+            "title": "羽丘女子学園",
+            "type": "episode",
+            "characters": []
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "month": 7,
+        "entries": [
+          {
+            "id": "ep-mygo-ep2",
+            "date": "2023-07-06",
+            "title": "もう誘わない",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-mygo-ep3",
+            "date": "2023-07-13",
+            "title": "カラオケ",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-mygo-ep4",
+            "date": "2023-07-20",
+            "title": "一生だよ！？",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "event-mygo-formation",
+            "date": "2023-07-20",
+            "title": "MyGO!!!!!結成",
+            "type": "event",
+            "characters": []
+          },
+          {
+            "id": "ep-mygo-ep5",
+            "date": "2023-07-27",
+            "title": "逃避行",
+            "type": "episode",
+            "characters": []
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "month": 8,
+        "entries": [
+          {
+            "id": "ep-mygo-ep6",
+            "date": "2023-08-03",
+            "title": "離れていても",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-mygo-ep7",
+            "date": "2023-08-10",
+            "title": "今日が最後",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "event-crychic-reunion",
+            "date": "2023-08-10",
+            "title": "CRYCHIC再会",
+            "type": "event",
+            "characters": []
+          },
+          {
+            "id": "ep-mygo-ep8",
+            "date": "2023-08-17",
+            "title": "違う",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-mygo-ep9",
+            "date": "2023-08-24",
+            "title": "解散",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-mygo-ep10",
+            "date": "2023-08-31",
+            "title": "ずっと迷子",
+            "type": "episode",
+            "characters": []
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "month": 9,
+        "entries": [
+          {
+            "id": "ep-mygo-ep11",
+            "date": "2023-09-07",
+            "title": "私のせい",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-mygo-ep12",
+            "date": "2023-09-14",
+            "title": "迷子",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-mygo-ep13",
+            "date": "2023-09-21",
+            "title": "唯一無二",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "event-ave-mujica-debut",
+            "date": "2023-09-21",
+            "title": "Ave Mujica初登場",
+            "type": "event",
+            "characters": []
+          },
+          {
+            "id": "event-first-live",
+            "date": "2023-09-21",
+            "title": "MyGO!!!!!初Live",
+            "type": "event",
+            "characters": []
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "month": 10,
+        "entries": [
+          {
+            "id": "event-cultural-festival",
+            "date": "2023-10-15",
+            "title": "文化祭演出",
+            "type": "event",
+            "characters": []
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "month": 11,
+        "entries": [
+          {
+            "id": "song-eishoku-mai",
+            "date": "2023-11-01",
+            "title": "影色舞",
+            "type": "song",
+            "characters": [
+              "char-tomori",
+              "char-anon",
+              "char-rana",
+              "char-soyo",
+              "char-taki"
+            ]
+          },
+          {
+            "id": "song-haruhikage",
+            "date": "2023-11-01",
+            "title": "春日影",
+            "type": "song",
+            "characters": [
+              "tomori"
+            ]
+          },
+          {
+            "id": "song-hekitenbansou",
+            "date": "2023-11-01",
+            "title": "碧天伴走",
+            "type": "song",
+            "characters": [
+              "char-tomori",
+              "char-anon",
+              "char-rana",
+              "char-soyo",
+              "char-taki"
+            ]
+          },
+          {
+            "id": "song-mayoi-hibi",
+            "date": "2023-11-01",
+            "title": "迷路日々",
+            "type": "song",
+            "characters": [
+              "char-tomori",
+              "char-anon",
+              "char-rana",
+              "char-soyo",
+              "char-taki"
+            ]
+          },
+          {
+            "id": "song-mayoi-uta",
+            "date": "2023-11-01",
+            "title": "迷星叫",
+            "type": "song",
+            "characters": [
+              "char-tomori",
+              "char-anon",
+              "char-rana",
+              "char-soyo",
+              "char-taki"
+            ]
+          },
+          {
+            "id": "song-oto-ichikai",
+            "date": "2023-11-01",
+            "title": "音一会",
+            "type": "song",
+            "characters": [
+              "char-tomori",
+              "char-anon",
+              "char-rana",
+              "char-soyo",
+              "char-taki"
+            ]
+          },
+          {
+            "id": "song-uta-o-koete",
+            "date": "2023-11-01",
+            "title": "詩超絆",
+            "type": "song",
+            "characters": [
+              "char-tomori",
+              "char-anon",
+              "char-rana",
+              "char-soyo",
+              "char-taki"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "months": [
+      {
+        "year": 2024,
+        "month": 1,
+        "entries": [
+          {
+            "id": "song-ave-mujica",
+            "date": "2024-01-01",
+            "title": "Ave Mujica",
+            "type": "song",
+            "characters": [
+              "char-sakiko",
+              "char-mutsumi",
+              "char-uika",
+              "char-umiri",
+              "char-nyamu"
+            ]
+          },
+          {
+            "id": "song-futatsu-no-tsuki",
+            "date": "2024-01-01",
+            "title": "ふたつの月",
+            "type": "song",
+            "characters": [
+              "char-sakiko",
+              "char-mutsumi",
+              "char-uika",
+              "char-umiri",
+              "char-nyamu"
+            ]
+          },
+          {
+            "id": "song-kuro-no-birthday",
+            "date": "2024-01-01",
+            "title": "黒のバースデイ",
+            "type": "song",
+            "characters": [
+              "char-sakiko",
+              "char-mutsumi",
+              "char-uika",
+              "char-umiri",
+              "char-nyamu"
+            ]
+          },
+          {
+            "id": "song-masquerade-rhapsody",
+            "date": "2024-01-01",
+            "title": "Mas?uerade Rhapsody Re?uest",
+            "type": "song",
+            "characters": [
+              "char-sakiko",
+              "char-mutsumi",
+              "char-uika",
+              "char-umiri",
+              "char-nyamu"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "months": [
+      {
+        "year": 2025,
+        "month": 1,
+        "entries": [
+          {
+            "id": "ep-ave-ep1",
+            "date": "2025-01-02",
+            "title": "Ave Mujica Ep 1",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-ave-ep2",
+            "date": "2025-01-09",
+            "title": "Ave Mujica Ep 2",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-ave-ep3",
+            "date": "2025-01-16",
+            "title": "Ave Mujica Ep 3",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-ave-ep4",
+            "date": "2025-01-23",
+            "title": "Ave Mujica Ep 4",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-ave-ep5",
+            "date": "2025-01-30",
+            "title": "Ave Mujica Ep 5",
+            "type": "episode",
+            "characters": []
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "month": 2,
+        "entries": [
+          {
+            "id": "ep-ave-ep6",
+            "date": "2025-02-06",
+            "title": "Ave Mujica Ep 6",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-ave-ep7",
+            "date": "2025-02-13",
+            "title": "Ave Mujica Ep 7",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-ave-ep8",
+            "date": "2025-02-20",
+            "title": "Ave Mujica Ep 8",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-ave-ep9",
+            "date": "2025-02-27",
+            "title": "Ave Mujica Ep 9",
+            "type": "episode",
+            "characters": []
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "month": 3,
+        "entries": [
+          {
+            "id": "ep-ave-ep10",
+            "date": "2025-03-06",
+            "title": "Ave Mujica Ep 10",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-ave-ep11",
+            "date": "2025-03-13",
+            "title": "Ave Mujica Ep 11",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-ave-ep12",
+            "date": "2025-03-20",
+            "title": "Ave Mujica Ep 12",
+            "type": "episode",
+            "characters": []
+          },
+          {
+            "id": "ep-ave-ep13",
+            "date": "2025-03-27",
+            "title": "Ave Mujica Ep 13",
+            "type": "episode",
+            "characters": []
+          }
+        ]
+      }
+    ]
+  }
+]
